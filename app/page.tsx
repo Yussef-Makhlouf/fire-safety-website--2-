@@ -17,12 +17,12 @@ import {
   HeadphonesIcon,
   Star,
   MessageCircle,
-  Mail,
   Instagram,
   Twitter,
   Linkedin,
   Menu,
   X,
+  Facebook,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -34,7 +34,7 @@ export default function HomePage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const clients = [
-    { name: "شركة الغذام", type: "مستودعات", location: "الغذامية - الرياض" },
+    { name: "شركة الغنام", type: "مستودعات", location: "الغنامية - الرياض" },
     { name: "شركة سقالة الأدوية", type: "مستودعات", location: "السلي الرياض" },
     { name: "شركة الرياض القابضة", type: "حراج بن قاسم", location: "العزيزية الرياض" },
     { name: "شركة الرياض القابضة", type: "مول بوابة الرياض", location: "العقيق - الرياض" },
@@ -284,7 +284,7 @@ export default function HomePage() {
       <section id="about" className="py-16 lg:py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 lg:mb-16">
-            <Badge className="bg-blue-100 text-blue-800 border-blue-200 mb-4 hover:bg-blue-200 hover:text-blue-800">من نحن</Badge>
+            <Badge className="bg-[#897c71]/10 text-[#897c71] border-[#897c71]/20 mb-4 hover:bg-[#897c71]/20 hover:text-[#897c71]">من نحن</Badge>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 lg:mb-6">رواد السلامة في المملكة العربية السعودية</h2>
             <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed px-4">
               شركة رائدة في مجال خدمات السلامة ومكافحة الحريق، نقدم حلولاً متكاملة ومبتكرة لحماية المنشآت والأرواح في
@@ -305,20 +305,20 @@ export default function HomePage() {
                 </p>
               </div>
 
-              <div className="grid grid-cols-2 gap-4 lg:gap-6">
+              {/* <div className="grid grid-cols-2 gap-4 lg:gap-6">
                 <Card className="text-center border-0 shadow-lg bg-red-50">
                   <CardContent className="p-4 lg:p-6">
                     <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-red-600 mb-2">500+</div>
                     <p className="text-gray-700 font-medium text-sm lg:text-base">مشروع مكتمل</p>
                   </CardContent>
                 </Card>
-                <Card className="text-center border-0 shadow-lg bg-blue-50">
+                <Card className="text-center border-0 shadow-lg bg-[#897c71]/5">
                   <CardContent className="p-4 lg:p-6">
-                    <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-blue-600 mb-2">15+</div>
+                    <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#897c71] mb-2">15+</div>
                     <p className="text-gray-700 font-medium text-sm lg:text-base">سنة خبرة</p>
                   </CardContent>
                 </Card>
-              </div>
+              </div> */}
 
               <div className="space-y-3 lg:space-y-4">
                 <div className="flex items-center space-x-3 space-x-reverse">
@@ -371,9 +371,9 @@ export default function HomePage() {
                 </CardContent>
               </Card>
 
-              <Card className="text-center border-0 shadow-lg bg-blue-50 hover:shadow-xl transition-all">
+              <Card className="text-center border-0 shadow-lg bg-[#897c71]/5 hover:shadow-xl transition-all">
                 <CardContent className="p-6 lg:p-8">
-                  <div className="bg-blue-600 w-16 h-16 lg:w-20 lg:h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="bg-[#897c71] w-16 h-16 lg:w-20 lg:h-20 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Award className="h-8 w-8 lg:h-10 lg:w-10 text-white" />
                   </div>
                   <h4 className="text-xl lg:text-2xl font-bold text-gray-900 mb-3">الجودة المتميزة</h4>
@@ -736,10 +736,10 @@ export default function HomePage() {
           {/* Additional Services Grid */}
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Maintenance Contracts */}
-            <Card className="border-0 shadow-2xl bg-gradient-to-br from-blue-50 to-blue-100 hover:shadow-3xl transition-all duration-500">
+            <Card className="border-0 shadow-2xl bg-gradient-to-br from-[#897c71]/5 to-[#897c71]/10 hover:shadow-3xl transition-all duration-500">
               <CardHeader className="pb-6">
                 <div className="flex items-center space-x-4 space-x-reverse mb-4">
-                  <div className="bg-blue-600 p-4 rounded-2xl shadow-lg">
+                  <div className="bg-[#897c71] p-4 rounded-2xl shadow-lg">
                     <Clock className="h-8 w-8 text-white" />
                   </div>
                   <div>
@@ -754,8 +754,8 @@ export default function HomePage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="bg-white p-4 rounded-xl shadow-sm">
                     <div className="flex items-center space-x-3 space-x-reverse mb-3">
-                      <div className="bg-blue-100 p-2 rounded-lg">
-                        <CheckCircle className="h-5 w-5 text-blue-600" />
+                      <div className="bg-[#897c71]/10 p-2 rounded-lg">
+                        <CheckCircle className="h-5 w-5 text-[#897c71]" />
                       </div>
                       <h4 className="font-bold text-gray-900">صيانة وقائية مجدولة</h4>
                     </div>
@@ -763,8 +763,8 @@ export default function HomePage() {
                   </div>
                   <div className="bg-white p-4 rounded-xl shadow-sm">
                     <div className="flex items-center space-x-3 space-x-reverse mb-3">
-                      <div className="bg-blue-100 p-2 rounded-lg">
-                        <CheckCircle className="h-5 w-5 text-blue-600" />
+                      <div className="bg-[#897c71]/10 p-2 rounded-lg">
+                        <CheckCircle className="h-5 w-5 text-[#897c71]" />
                       </div>
                       <h4 className="font-bold text-gray-900">فريق طوارئ 24/7</h4>
                     </div>
@@ -772,8 +772,8 @@ export default function HomePage() {
                   </div>
                   <div className="bg-white p-4 rounded-xl shadow-sm">
                     <div className="flex items-center space-x-3 space-x-reverse mb-3">
-                      <div className="bg-blue-100 p-2 rounded-lg">
-                        <CheckCircle className="h-5 w-5 text-blue-600" />
+                      <div className="bg-[#897c71]/10 p-2 rounded-lg">
+                        <CheckCircle className="h-5 w-5 text-[#897c71]" />
                       </div>
                       <h4 className="font-bold text-gray-900">تحديث الأنظمة القديمة</h4>
                     </div>
@@ -781,19 +781,19 @@ export default function HomePage() {
                   </div>
                   <div className="bg-white p-4 rounded-xl shadow-sm">
                     <div className="flex items-center space-x-3 space-x-reverse mb-3">
-                      <div className="bg-blue-100 p-2 rounded-lg">
-                        <CheckCircle className="h-5 w-5 text-blue-600" />
+                      <div className="bg-[#897c71]/10 p-2 rounded-lg">
+                        <CheckCircle className="h-5 w-5 text-[#897c71]" />
                       </div>
                       <h4 className="font-bold text-gray-900">تدريب الموظفين</h4>
                     </div>
                     <p className="text-gray-600 text-sm">تدريب على الاستخدام الصحيح</p>
                   </div>
                 </div>
-                <div className="bg-blue-600 text-white p-4 rounded-xl">
+                <div className="bg-[#897c71] text-white p-4 rounded-xl">
                   <div className="flex items-center flex-col gap-4 justify-between">
                     <div>
                       <h4 className="font-bold text-lg">تقارير شهرية مفصلة</h4>
-                      <p className="text-blue-100">متابعة مستمرة وحالة الأنظمة</p>
+                      <p className="text-white">متابعة مستمرة وحالة الأنظمة</p>
                     </div>
                     <div className="flex space-x-2 space-x-reverse">
                       <Button 
@@ -805,7 +805,7 @@ export default function HomePage() {
                       </Button>
                       <Button 
                         variant="outline" 
-                        className="border-transparent bg-blue-500 text-white hover:bg-white hover:text-red-600"
+                        className="border-white bg-[#897c71]/80 text-white hover:bg-white hover:text-[#897c71]"
                         onClick={() => window.open('tel:+966555275651', '_blank')}
                       >
                         <Phone className="h-4 w-4 ml-2" />
@@ -910,19 +910,15 @@ export default function HomePage() {
                 </div>
                 <h4 className="text-xl lg:text-2xl font-bold text-gray-900 mb-4">التقييم الأولي</h4>
                 <p className="text-gray-600 text-sm lg:text-base leading-relaxed">زيارة المنشأة وتقييم احتياجات السلامة الشاملة مع فريق متخصص</p>
-                <div className="mt-4 bg-red-50 p-3 rounded-lg">
-                  <p className="text-red-800 font-medium text-sm">مجاناً</p>
-                </div>
+         
               </div>
               <div className="text-center group">
-                <div className="bg-gradient-to-br from-blue-500 to-blue-600 text-white w-16 h-16 lg:w-20 lg:h-20 rounded-full flex items-center justify-center mx-auto mb-6 text-xl lg:text-2xl font-bold shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <div className="bg-gradient-to-br from-[#897c71] to-[#897c71]/80 text-white w-16 h-16 lg:w-20 lg:h-20 rounded-full flex items-center justify-center mx-auto mb-6 text-xl lg:text-2xl font-bold shadow-lg group-hover:scale-110 transition-transform duration-300">
                   2
                 </div>
                 <h4 className="text-xl lg:text-2xl font-bold text-gray-900 mb-4">التصميم والتخطيط</h4>
                 <p className="text-gray-600 text-sm lg:text-base leading-relaxed">وضع خطة شاملة مخصصة لمنشأتك مع أحدث التقنيات</p>
-                <div className="mt-4 bg-blue-50 p-3 rounded-lg">
-                  <p className="text-blue-800 font-medium text-sm">مخصص</p>
-                </div>
+         
               </div>
               <div className="text-center group">
                 <div className="bg-gradient-to-br from-green-500 to-green-600 text-white w-16 h-16 lg:w-20 lg:h-20 rounded-full flex items-center justify-center mx-auto mb-6 text-xl lg:text-2xl font-bold shadow-lg group-hover:scale-110 transition-transform duration-300">
@@ -930,9 +926,7 @@ export default function HomePage() {
                 </div>
                 <h4 className="text-xl lg:text-2xl font-bold text-gray-900 mb-4">التنفيذ والتركيب</h4>
                 <p className="text-gray-600 text-sm lg:text-base leading-relaxed">تركيب الأنظمة بأعلى معايير الجودة والسلامة</p>
-                <div className="mt-4 bg-green-50 p-3 rounded-lg">
-                  <p className="text-green-800 font-medium text-sm">احترافي</p>
-                </div>
+            
               </div>
               <div className="text-center group">
                 <div className="bg-gradient-to-br from-orange-500 to-orange-600 text-white w-16 h-16 lg:w-20 lg:h-20 rounded-full flex items-center justify-center mx-auto mb-6 text-xl lg:text-2xl font-bold shadow-lg group-hover:scale-110 transition-transform duration-300">
@@ -940,9 +934,7 @@ export default function HomePage() {
                 </div>
                 <h4 className="text-xl lg:text-2xl font-bold text-gray-900 mb-4">المتابعة والصيانة</h4>
                 <p className="text-gray-600 text-sm lg:text-base leading-relaxed">صيانة دورية وخدمة عملاء مستمرة على مدار الساعة</p>
-                <div className="mt-4 bg-orange-50 p-3 rounded-lg">
-                  <p className="text-orange-800 font-medium text-sm">24/7</p>
-                </div>
+           
               </div>
             </div>
           </div>
@@ -950,10 +942,10 @@ export default function HomePage() {
       </section>
 
       {/* Enhanced Sectors Section */}
-      <section id="sectors" className="py-16 lg:py-20 bg-gradient-to-br from-blue-50 to-white">
+      <section id="sectors" className="py-16 lg:py-20 bg-gradient-to-br from-[#897c71]/5 to-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 lg:mb-16">
-            <Badge className="bg-blue-100 text-blue-800 border-blue-200 mb-4 hover:bg-blue-200 hover:text-blue-800">القطاعات التي نخدمها</Badge>
+            <Badge className="bg-[#897c71]/10 text-[#897c71] border-[#897c71]/20 mb-4 hover:bg-[#897c71]/20 hover:text-[#897c71]">القطاعات التي نخدمها</Badge>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 lg:mb-6">حلول مخصصة لجميع القطاعات</h2>
             <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto px-4">
               نقدم خدمات السلامة ومكافحة الحريق لجميع أنواع المنشآت والقطاعات في المملكة العربية السعودية
@@ -989,9 +981,9 @@ export default function HomePage() {
                     <span className="text-gray-700 text-sm">معدات إطفاء متخصصة</span>
                   </div>
                 </div>
-                <div className="bg-red-50 p-3 rounded-lg">
+                {/* <div className="bg-red-50 p-3 rounded-lg">
                   <p className="text-red-800 font-medium text-sm">15+ مشروع مكتمل</p>
-                </div>
+                </div> */}
               </CardContent>
             </Card>
 
@@ -999,7 +991,7 @@ export default function HomePage() {
             <Card className="border-0 shadow-xl bg-white hover:shadow-2xl transition-all duration-300">
               <CardHeader className="pb-4">
                 <div className="flex items-center space-x-4 space-x-reverse mb-4">
-                  <div className="bg-blue-600 p-3 rounded-xl shadow-lg">
+                  <div className="bg-[#897c71] p-3 rounded-xl shadow-lg">
                     <Building className="h-6 w-6 text-white" />
                   </div>
                   <div>
@@ -1023,9 +1015,9 @@ export default function HomePage() {
                     <span className="text-gray-700 text-sm">تدريب السكان على الإخلاء</span>
                   </div>
                 </div>
-                <div className="bg-blue-50 p-3 rounded-lg">
-                  <p className="text-blue-800 font-medium text-sm">12+ مشروع مكتمل</p>
-                </div>
+                {/* <div className="bg-[#897c71]/5 p-3 rounded-lg">
+                  <p className="text-[#897c71] font-medium text-sm">12+ مشروع مكتمل</p>
+                </div> */}
               </CardContent>
             </Card>
 
@@ -1057,9 +1049,9 @@ export default function HomePage() {
                     <span className="text-gray-700 text-sm">خطط إخلاء للزوار</span>
                   </div>
                 </div>
-                <div className="bg-green-50 p-3 rounded-lg">
+                {/* <div className="bg-green-50 p-3 rounded-lg">
                   <p className="text-green-800 font-medium text-sm">8+ مشروع مكتمل</p>
-                </div>
+                </div> */}
               </CardContent>
             </Card>
 
@@ -1091,9 +1083,9 @@ export default function HomePage() {
                     <span className="text-gray-700 text-sm">تدريب العمال على السلامة</span>
                   </div>
                 </div>
-                <div className="bg-orange-50 p-3 rounded-lg">
-                  <p className="text-orange-800 font-medium text-sm">10+ مشروع مكتمل</p>
-                </div>
+                {/* <div className="bg-[#897c71]/5 p-3 rounded-lg">
+                  <p className="text-[#897c71] font-medium text-sm">10+ مشروع مكتمل</p>
+                </div> */}
               </CardContent>
             </Card>
 
@@ -1101,7 +1093,7 @@ export default function HomePage() {
             <Card className="border-0 shadow-xl bg-white hover:shadow-2xl transition-all duration-300">
               <CardHeader className="pb-4">
                 <div className="flex items-center space-x-4 space-x-reverse mb-4">
-                  <div className="bg-purple-600 p-3 rounded-xl shadow-lg">
+                  <div className="bg-[#897c71] p-3 rounded-xl shadow-lg">
                     <Users className="h-6 w-6 text-white" />
                   </div>
                   <div>
@@ -1125,9 +1117,9 @@ export default function HomePage() {
                     <span className="text-gray-700 text-sm">تدريب الطلاب على الإخلاء</span>
                   </div>
                 </div>
-                <div className="bg-purple-50 p-3 rounded-lg">
-                  <p className="text-purple-800 font-medium text-sm">6+ مشروع مكتمل</p>
-                </div>
+                {/* <div className="bg-[#897c71]/5 p-3 rounded-lg">
+                  <p className="text-[#897c71] font-medium text-sm">6+ مشروع مكتمل</p>
+                </div> */}
               </CardContent>
             </Card>
 
@@ -1159,9 +1151,9 @@ export default function HomePage() {
                     <span className="text-gray-700 text-sm">خطط طوارئ شاملة</span>
                   </div>
                 </div>
-                <div className="bg-indigo-50 p-3 rounded-lg">
-                  <p className="text-indigo-800 font-medium text-sm">5+ مشروع مكتمل</p>
-                </div>
+                {/* <div className="bg-[#897c71]/5 p-3 rounded-lg">
+                  <p className="text-[#897c71] font-medium text-sm">5+ مشروع مكتمل</p>
+                </div> */}
               </CardContent>
             </Card>
           </div>
@@ -1172,7 +1164,7 @@ export default function HomePage() {
       <section id="projects" className="py-16 lg:py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 lg:mb-16">
-            <Badge className="bg-blue-100 text-blue-800 border-blue-200 mb-4 hover:bg-blue-200 hover:text-blue-800">مشاريعنا المتميزة</Badge>
+            <Badge className="bg-[#897c71]/10 text-[#897c71] border-[#897c71]/20 mb-4 hover:bg-[#897c71]/20 hover:text-[#897c71]">مشاريعنا المتميزة</Badge>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 lg:mb-6">شركاء النجاح في المملكة</h2>
             <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto px-4">
               نفخر بخدمة أكثر من 500 مشروع متنوع في جميع أنحاء المملكة العربية السعودية
@@ -1294,24 +1286,24 @@ export default function HomePage() {
                 <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-4">خط الطوارئ</h3>
                 <div className="space-y-3">
                   <div className="bg-red-50 p-3 lg:p-4 rounded-lg">
-                    <p className="text-base lg:text-lg font-bold text-red-600">+966555275651</p>
+                    <p className="text-base lg:text-lg font-bold text-red-600">0555275651</p>
                     <p className="text-xs lg:text-sm text-gray-600">متاح 24/7</p>
                     <Button 
                       size="sm"
                       className="w-full mt-2 bg-red-600 hover:bg-red-700 text-white text-xs"
-                      onClick={() => window.open('tel:+966555275651', '_blank')}
+                      onClick={() => window.open('tel:0555275651', '_blank')}
                     >
                       <Phone className="h-3 w-3 ml-1" />
                       اتصال مباشر
                     </Button>
                   </div>
                   <div className="bg-red-50 p-3 lg:p-4 rounded-lg">
-                    <p className="text-base lg:text-lg font-bold text-red-600">+966543011003</p>
+                    <p className="text-base lg:text-lg font-bold text-red-600">0543011003</p>
                     <p className="text-xs lg:text-sm text-gray-600">دعم فني</p>
                     <Button 
                       size="sm"
                       className="w-full mt-2 bg-red-600 hover:bg-red-700 text-white text-xs"
-                      onClick={() => window.open('tel:+966543011003', '_blank')}
+                      onClick={() => window.open('tel:0543011003', '_blank')}
                     >
                       <Phone className="h-3 w-3 ml-1" />
                       اتصال مباشر
@@ -1355,12 +1347,12 @@ export default function HomePage() {
             {/* Office Information */}
             <Card className="border-0 shadow-2xl bg-white text-center">
               <CardContent className="p-6 lg:p-8">
-                <div className="bg-blue-100 w-16 h-16 lg:w-20 lg:h-20 rounded-full flex items-center justify-center mx-auto mb-4 lg:mb-6">
-                  <MapPin className="h-8 w-8 lg:h-10 lg:w-10 text-blue-600" />
+                <div className="bg-[#897c71]/10 w-16 h-16 lg:w-20 lg:h-20 rounded-full flex items-center justify-center mx-auto mb-4 lg:mb-6">
+                  <MapPin className="h-8 w-8 lg:h-10 lg:w-10 text-[#897c71]" />
                 </div>
                 <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-4">مكتبنا الرئيسي</h3>
                 <div className="space-y-3 text-right">
-                  <div className="bg-blue-50 p-3 lg:p-4 rounded-lg">
+                  <div className="bg-[#897c71]/5 p-3 lg:p-4 rounded-lg">
                     <p className="font-bold text-gray-900 text-sm lg:text-base">الرياض</p>
                     <p className="text-xs lg:text-sm text-gray-600">المملكة العربية السعودية</p>
                   </div>
@@ -1406,18 +1398,51 @@ export default function HomePage() {
           <div className="mt-12 lg:mt-16 text-center flex flex-col items-center justify-center">
             <h3 className="text-2xl sm:text-3xl font-bold text-white mb-6 lg:mb-8">تابعنا على وسائل التواصل الاجتماعي</h3>
             <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 space-x-reverse" dir="ltr">
-              <Button size="lg" className="bg-white text-red-600 hover:bg-gray-100 px-6 lg:px-8 py-3 lg:py-4 text-sm lg:text-base">
+              <Button 
+                size="lg" 
+                className="bg-white text-red-600 hover:bg-gray-100 px-6 lg:px-8 py-3 lg:py-4 text-sm lg:text-base"
+                onClick={() => window.open('https://www.instagram.com/fire.fighting.basics?igsh=MXFsajEzOG4zajlmZg==', '_blank')}
+              >
                 <Instagram className="h-5 w-5 lg:h-6 lg:w-6 ml-2" />
                 إنستغرام
               </Button>
          
-              <Button size="lg" className="bg-white text-red-600 hover:bg-gray-100 px-6 lg:px-8 py-3 lg:py-4 text-sm lg:text-base">
+              <Button 
+                size="lg" 
+                className="bg-white text-red-600 hover:bg-gray-100 px-6 lg:px-8 py-3 lg:py-4 text-sm lg:text-base"
+                onClick={() => window.open('https://x.com/fire_fight_bas', '_blank')}
+              >
                 <Twitter className="h-5 w-5 lg:h-6 lg:w-6 ml-2" />
                 تويتر
               </Button>
-              <Button size="lg" className="bg-white text-red-600 hover:bg-gray-100 px-6 lg:px-8 py-3 lg:py-4 text-sm lg:text-base">
-                <Mail className="h-5 w-5 lg:h-6 lg:w-6 ml-2" />
-                البريد الإلكتروني
+              <Button 
+                size="lg" 
+                className="bg-white text-red-600 hover:bg-gray-100 px-6 lg:px-8 py-3 lg:py-4 text-sm lg:text-base"
+                onClick={() => window.open('https://www.facebook.com/profile.php?id=61578185585083', '_blank')}
+              >
+                <Facebook className="h-5 w-5 lg:h-6 lg:w-6 ml-2" />
+                فيسبوك
+              </Button>
+              <Button 
+                size="lg" 
+                className="bg-white text-red-600 hover:bg-gray-100 px-6 lg:px-8 py-3 lg:py-4 text-sm lg:text-base"
+                onClick={() => window.open('https://www.tiktok.com/@fire.fighting.basics?lang=ar', '_blank')}
+              >
+                <svg className="h-5 w-5 lg:h-6 lg:w-6 ml-2" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-.88-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                </svg>
+                تيك توك
+              </Button>
+              <Button 
+                size="lg" 
+                className="bg-white text-red-600 hover:bg-gray-100 px-6 lg:px-8 py-3 lg:py-4 text-sm lg:text-base"
+                onClick={() => window.open('https://www.snapchat.com/add/firefightbas?share_id=DR1GAX_SMJA&locale=ar-EG', '_blank')}
+              >
+                {/* Snapchat SVG icon */}
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path d="M5.829 4.533c-.6 1.344-.363 3.752-.267 5.436-.648.359-1.48-.271-1.951-.271-.49 0-1.075.322-1.167.802-.066.346.089.85 1.201 1.289.43.17 1.453.37 1.69.928.333.784-1.71 4.403-4.918 4.931-.251.041-.43.265-.416.519.056.975 2.242 1.357 3.211 1.507.099.134.179.7.306 1.131.057.193.204.424.582.424.493 0 1.312-.38 2.738-.144 1.398.233 2.712 2.215 5.235 2.215 2.345 0 3.744-1.991 5.09-2.215.779-.129 1.448-.088 2.196.058.515.101.977.157 1.124-.349.129-.437.208-.992.305-1.123.96-.149 3.156-.53 3.211-1.505.014-.254-.165-.477-.416-.519-3.154-.52-5.259-4.128-4.918-4.931.236-.557 1.252-.755 1.69-.928.814-.321 1.222-.716 1.213-1.173-.011-.585-.715-.934-1.233-.934-.527 0-1.284.624-1.897.286.096-1.698.332-4.095-.267-5.438-1.135-2.543-3.66-3.829-6.184-3.829-2.508 0-5.014 1.268-6.158 3.833z" fill="#dc2626"/>
+                </svg>
+                سناب شات
               </Button>
             </div>
           </div>
@@ -1446,17 +1471,39 @@ export default function HomePage() {
                   ومبتكرة لحماية الأرواح والممتلكات. نخدم جميع القطاعات من المستودعات والمصانع إلى المجمعات السكنية والمراكز التجارية.
                 </p>
                 <div className="flex space-x-4 space-x-reverse">
-                  <div className="bg-gray-800 p-2 lg:p-3 rounded-lg hover:bg-red-600 transition-colors cursor-pointer">
+                  <div 
+                    className="bg-gray-800 p-2 lg:p-3 rounded-lg hover:bg-red-600 transition-colors cursor-pointer"
+                    onClick={() => window.open('https://www.instagram.com/fire.fighting.basics?igsh=MXFsajEzOG4zajlmZg==', '_blank')}
+                  >
                     <Instagram className="h-4 w-4 lg:h-5 lg:w-5" />
                   </div>
-                  <div className="bg-gray-800 p-2 lg:p-3 rounded-lg hover:bg-red-600 transition-colors cursor-pointer">
-                    <Linkedin className="h-4 w-4 lg:h-5 lg:w-5" />
-                  </div>
-                  <div className="bg-gray-800 p-2 lg:p-3 rounded-lg hover:bg-red-600 transition-colors cursor-pointer">
+                  <div 
+                    className="bg-gray-800 p-2 lg:p-3 rounded-lg hover:bg-red-600 transition-colors cursor-pointer"
+                    onClick={() => window.open('https://x.com/fire_fight_bas', '_blank')}
+                  >
                     <Twitter className="h-4 w-4 lg:h-5 lg:w-5" />
                   </div>
-                  <div className="bg-gray-800 p-2 lg:p-3 rounded-lg hover:bg-red-600 transition-colors cursor-pointer">
-                    <Mail className="h-4 w-4 lg:h-5 lg:w-5" />
+                  <div 
+                    className="bg-gray-800 p-2 lg:p-3 rounded-lg hover:bg-red-600 transition-colors cursor-pointer"
+                    onClick={() => window.open('https://www.facebook.com/profile.php?id=61578185585083', '_blank')}
+                  >
+                    <Facebook className="h-4 w-4 lg:h-5 lg:w-5" />
+                  </div>
+                  <div 
+                    className="bg-gray-800 p-2 lg:p-3 rounded-lg hover:bg-red-600 transition-colors cursor-pointer"
+                    onClick={() => window.open('https://www.tiktok.com/@fire.fighting.basics?lang=ar', '_blank')}
+                  >
+                    <svg className="h-4 w-4 lg:h-5 lg:w-5" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-.88-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                    </svg>
+                  </div>
+                  <div 
+                    className="bg-gray-800 p-2 lg:p-3 rounded-lg hover:bg-red-600 transition-colors cursor-pointer"
+                    onClick={() => window.open('https://www.snapchat.com/add/firefightbas?share_id=DR1GAX_SMJA&locale=ar-EG', '_blank')}
+                  >
+                    <svg className="h-4 w-4 lg:h-5 lg:w-5" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.746-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001 12.017.001z"/>
+                    </svg>
                   </div>
                 </div>
               </div>
@@ -1629,19 +1676,19 @@ export default function HomePage() {
                     </div>
                     <div>
                       <p className="font-medium text-sm lg:text-base">أرقام الهاتف</p>
-                      <p className="text-gray-300 text-xs lg:text-sm">0555275651</p> 
+                      <p className="text-gray-300 text-xs lg:text-sm">0555275651</p>
                       <p className="text-gray-300 text-xs lg:text-sm">0543011003</p>
                     </div>
                   </div>
 
                   <div className="flex items-start space-x-3 space-x-reverse">
                     <div className="bg-red-600 p-2 rounded-lg mt-1">
-                      <Mail className="h-3 w-3 lg:h-4 lg:w-4" />
+                      <Facebook className="h-3 w-3 lg:h-4 lg:w-4" />
                     </div>
                     <div>
-                      <p className="font-medium text-sm lg:text-base">البريد الإلكتروني</p>
-                      <p className="text-gray-300 text-xs lg:text-sm">info@firesafety-ksa.com</p>
-                      <p className="text-gray-300 text-xs lg:text-sm">support@firesafety-ksa.com</p>
+                      <p className="font-medium text-sm lg:text-base">فيسبوك</p>
+                      <p className="text-gray-300 text-xs lg:text-sm">@fire.fighting.basics</p>
+                      <p className="text-gray-300 text-xs lg:text-sm">تابعنا على فيسبوك</p>
                     </div>
                   </div>
 
@@ -1680,7 +1727,7 @@ export default function HomePage() {
               </div>
               <div className="text-center">
                 <div className="bg-gray-800 p-4 lg:p-6 rounded-lg mb-3 lg:mb-4">
-                  <Shield className="h-8 w-8 lg:h-12 lg:w-12 text-blue-400 mx-auto" />
+                  <Shield className="h-8 w-8 lg:h-12 lg:w-12 text-[#897c71] mx-auto" />
                 </div>
                 <p className="font-medium text-sm lg:text-base">ISO 9001:2015</p>
                 <p className="text-xs lg:text-sm text-gray-400">إدارة الجودة</p>
