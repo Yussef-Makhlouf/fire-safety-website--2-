@@ -1,4 +1,3 @@
-
 "use client"
 import {
   Phone,
@@ -358,7 +357,7 @@ export default function HomePage() {
           </div>
 
           {/* Enhanced Company Values */}
-          <div className="mt-16 lg:mt-20">
+          {/* <div className="mt-16 lg:mt-20">
             <h3 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-8 lg:mb-12">قيمنا ومبادئنا</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
               <Card className="text-center border-0 shadow-lg bg-red-50 hover:shadow-xl transition-all">
@@ -401,7 +400,7 @@ export default function HomePage() {
                 </CardContent>
               </Card>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -409,508 +408,210 @@ export default function HomePage() {
       <section id="services" className="py-16 lg:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 lg:mb-16">
-            <Badge className="bg-red-100 text-red-800 border-red-200 mb-4 hover:bg-red-200 hover:text-red-800">خدماتنا المتميزة</Badge>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 lg:mb-6">حلول شاملة لجميع احتياجات السلامة</h2>
+            <Badge className="bg-red-100 text-red-800 border-red-200 mb-4 hover:bg-red-200 hover:text-red-800">معرض مشاريعنا</Badge>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 lg:mb-6">مشاريعنا المنجزة</h2>
             <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto px-4">
-              نقدم مجموعة متكاملة من الخدمات المتخصصة في مجال السلامة ومكافحة الحريق، مصممة خصيصاً لتلبية احتياجات جميع أنواع المنشآت
-              من المستودعات والمصانع إلى المجمعات السكنية والمراكز التجارية
+              نعرض لكم مجموعة من مشاريعنا المنجزة في مختلف القطاعات، حيث قمنا بتقديم خدمات السلامة ومكافحة الحريق بأعلى معايير الجودة
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
-            {services.map((service, index) => (
-              <Card
-                key={index}
-                className={`border-2 ${service.color} shadow-xl hover:shadow-2xl transition-all duration-300`}
-              >
-                <CardHeader className="pb-4">
-                  <div className="flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-4 space-x-reverse">
-                    <div className="bg-white p-3 lg:p-4 rounded-xl shadow-sm">
-                      <service.icon className={`h-6 w-6 lg:h-8 lg:w-8 ${service.iconColor}`} />
-                    </div>
-                    <div className="flex-1">
-                      <CardTitle className="text-xl lg:text-2xl mb-3">{service.title}</CardTitle>
-                      <CardDescription className="text-gray-600 text-base lg:text-lg leading-relaxed">
-                        {service.description}
-                      </CardDescription>
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="space-y-3">
-                    {service.features.map((feature, featureIndex) => (
-                      <div key={featureIndex} className="flex items-start space-x-3 space-x-reverse">
-                        <CheckCircle className="h-4 w-4 lg:h-5 lg:w-5 text-green-600 mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-700 leading-relaxed text-sm lg:text-base">{feature}</span>
-                      </div>
-                    ))}
-                  </div>
-                  <div className="pt-4 space-y-2">
-                    <Button 
-                      className="w-full bg-green-600 hover:bg-green-700 text-white text-sm lg:text-base"
-                      onClick={() => window.open('https://wa.me/966555275651', '_blank')}
-                    >
-                      <MessageCircle className="h-4 w-4 ml-2" />
-                      واتساب مجاني
-                    </Button>
-                    <Button 
-                      variant="outline" 
-                      className="w-full border-gray-300 hover:bg-white bg-transparent text-sm lg:text-base"
-                      onClick={() => window.open('tel:+966555275651', '_blank')}
-                    >
-                      <Phone className="h-4 w-4 ml-2" />
-                      اتصال مباشر
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 lg:gap-8">
+            {/* مشروع 1 */}
+            <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+              <img
+                src="/pro1.jpg"
+                alt="مشروع 1"
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+                <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
+                  <h3 className="text-lg font-bold mb-2">مشروع 1</h3>
+                  <p className="text-sm">خدمات السلامة ومكافحة الحريق</p>
+                </div>
+              </div>
+            </div>
 
-          {/* Additional Services Overview */}
-          <div className="mt-16 lg:mt-20">
-            <h3 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-8 lg:mb-12">خدمات إضافية متخصصة</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-              <Card className="border-0 shadow-lg bg-white hover:shadow-xl transition-all">
-                <CardContent className="p-6 lg:p-8 text-center">
-                  <div className="bg-purple-100 w-16 h-16 lg:w-20 lg:h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Users className="h-8 w-8 lg:h-10 lg:w-10 text-purple-600" />
-                  </div>
-                  <h4 className="text-xl lg:text-2xl font-bold text-gray-900 mb-3">تدريب فرق الطوارئ</h4>
-                  <p className="text-gray-600 text-sm lg:text-base mb-4">تدريب شامل للموظفين على إجراءات السلامة والطوارئ</p>
-                  <ul className="text-right space-y-2 text-sm text-gray-600">
-                    <li>• إجراءات الإخلاء في حالات الطوارئ</li>
-                    <li>• استخدام معدات الإطفاء</li>
-                    <li>• التعامل مع أنظمة الإنذار</li>
-                  </ul>
-                </CardContent>
-              </Card>
+            {/* مشروع 2 */}
+            <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+              <img
+                src="/pro2.jpg"
+                alt="مشروع 2"
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+                <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
+                  <h3 className="text-lg font-bold mb-2">مشروع 2</h3>
+                  <p className="text-sm">خدمات السلامة ومكافحة الحريق</p>
+                </div>
+              </div>
+            </div>
 
-              <Card className="border-0 shadow-lg bg-white hover:shadow-xl transition-all">
-                <CardContent className="p-6 lg:p-8 text-center">
-                  <div className="bg-yellow-100 w-16 h-16 lg:w-20 lg:h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <FileCheck className="h-8 w-8 lg:h-10 lg:w-10 text-yellow-600" />
-                  </div>
-                  <h4 className="text-xl lg:text-2xl font-bold text-gray-900 mb-3">استشارات السلامة</h4>
-                  <p className="text-gray-600 text-sm lg:text-base mb-4">استشارات متخصصة لتطوير خطط السلامة الشاملة</p>
-                  <ul className="text-right space-y-2 text-sm text-gray-600">
-                    <li>• تقييم مخاطر السلامة</li>
-                    <li>• تطوير خطط الطوارئ</li>
-                    <li>• مراجعة المعايير والأنظمة</li>
-                  </ul>
-                </CardContent>
-              </Card>
+            {/* مشروع 3 */}
+            <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+              <img
+                src="/pro3.jpg"
+                alt="مشروع 3"
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+                <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
+                  <h3 className="text-lg font-bold mb-2">مشروع 3</h3>
+                  <p className="text-sm">خدمات السلامة ومكافحة الحريق</p>
+                </div>
+              </div>
+            </div>
 
-              <Card className="border-0 shadow-lg bg-white hover:shadow-xl transition-all">
-                <CardContent className="p-6 lg:p-8 text-center">
-                  <div className="bg-indigo-100 w-16 h-16 lg:w-20 lg:h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Settings className="h-8 w-8 lg:h-10 lg:w-10 text-indigo-600" />
-                  </div>
-                  <h4 className="text-xl lg:text-2xl font-bold text-gray-900 mb-3">تحديث الأنظمة</h4>
-                  <p className="text-gray-600 text-sm lg:text-base mb-4">ترقية وتحديث أنظمة السلامة القديمة</p>
-                  <ul className="text-right space-y-2 text-sm text-gray-600">
-                    <li>• ترقية أنظمة الإنذار</li>
-                    <li>• تحديث معدات الإطفاء</li>
-                    <li>• تحسين كفاءة الأنظمة</li>
-                  </ul>
-                </CardContent>
-              </Card>
+            {/* مشروع 4 */}
+            <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+              <img
+                src="/pro4.jpg"
+                alt="مشروع 4"
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+                <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
+                  <h3 className="text-lg font-bold mb-2">مشروع 4</h3>
+                  <p className="text-sm">خدمات السلامة ومكافحة الحريق</p>
+                </div>
+              </div>
+            </div>
+
+            {/* مشروع 5 */}
+            <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+              <img
+                src="/pro5.jpg"
+                alt="مشروع 5"
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+                <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
+                  <h3 className="text-lg font-bold mb-2">مشروع 5</h3>
+                  <p className="text-sm">خدمات السلامة ومكافحة الحريق</p>
+                </div>
+              </div>
+            </div>
+
+            {/* مشروع 6 */}
+            <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+              <img
+                src="/pro6.jpg"
+                alt="مشروع 6"
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+                <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
+                  <h3 className="text-lg font-bold mb-2">مشروع 6</h3>
+                  <p className="text-sm">خدمات السلامة ومكافحة الحريق</p>
+                </div>
+              </div>
+            </div>
+
+            {/* مشروع 7 */}
+            <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+              <img
+                src="/pro7.jpg"
+                alt="مشروع 7"
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+                <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
+                  <h3 className="text-lg font-bold mb-2">مشروع 7</h3>
+                  <p className="text-sm">خدمات السلامة ومكافحة الحريق</p>
+                </div>
+              </div>
+            </div>
+
+            {/* مشروع 8 */}
+            <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+              <img
+                src="/pro11.jpg"
+                alt="مشروع 8"
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+                <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
+                  <h3 className="text-lg font-bold mb-2">مشروع 8</h3>
+                  <p className="text-sm">خدمات السلامة ومكافحة الحريق</p>
+                </div>
+              </div>
+            </div>
+
+            {/* مشروع 9 */}
+            <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+              <img
+                src="/pro9.jpg"
+                alt="مشروع 9"
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+                <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
+                  <h3 className="text-lg font-bold mb-2">مشروع 9</h3>
+                  <p className="text-sm">خدمات السلامة ومكافحة الحريق</p>
+                </div>
+              </div>
+            </div>
+
+            {/* مشروع 10 */}
+            <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+              <img
+                src="/pro10.jpg"
+                alt="مشروع 10"
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+                <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
+                  <h3 className="text-lg font-bold mb-2">مشروع 10</h3>
+                  <p className="text-sm">خدمات السلامة ومكافحة الحريق</p>
+                </div>
+              </div>
             </div>
           </div>
 
-          {/* Enhanced Service Process */}
+          {/* إحصائيات المشاريع */}
+          {/* <div className="mt-16 lg:mt-20 bg-white rounded-2xl shadow-xl p-8 lg:p-12">
+            <h3 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-8 lg:mb-12">إحصائيات مشاريعنا</h3>
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+              <div className="text-center">
+                <div className="bg-gradient-to-br from-red-500 to-red-600 text-white w-16 h-16 lg:w-20 lg:h-20 rounded-full flex items-center justify-center mx-auto mb-4 text-xl lg:text-2xl font-bold shadow-lg">
+                  500+
+                </div>
+                <h4 className="text-lg lg:text-xl font-bold text-gray-900 mb-2">مشروع مكتمل</h4>
+                <p className="text-gray-600 text-sm lg:text-base">في جميع أنحاء المملكة</p>
+              </div>
+              <div className="text-center">
+                <div className="bg-gradient-to-br from-blue-500 to-blue-600 text-white w-16 h-16 lg:w-20 lg:h-20 rounded-full flex items-center justify-center mx-auto mb-4 text-xl lg:text-2xl font-bold shadow-lg">
+                  15+
+                </div>
+                <h4 className="text-lg lg:text-xl font-bold text-gray-900 mb-2">سنة خبرة</h4>
+                <p className="text-gray-600 text-sm lg:text-base">في مجال السلامة</p>
+              </div>
+              <div className="text-center">
+                <div className="bg-gradient-to-br from-green-500 to-green-600 text-white w-16 h-16 lg:w-20 lg:h-20 rounded-full flex items-center justify-center mx-auto mb-4 text-xl lg:text-2xl font-bold shadow-lg">
+                  50+
+                </div>
+                <h4 className="text-lg lg:text-xl font-bold text-gray-900 mb-2">عميل راضي</h4>
+                <p className="text-gray-600 text-sm lg:text-base">من مختلف القطاعات</p>
+              </div>
+              <div className="text-center">
+                <div className="bg-gradient-to-br from-orange-500 to-orange-600 text-white w-16 h-16 lg:w-20 lg:h-20 rounded-full flex items-center justify-center mx-auto mb-4 text-xl lg:text-2xl font-bold shadow-lg">
+                  24/7
+                </div>
+                <h4 className="text-lg lg:text-xl font-bold text-gray-900 mb-2">دعم فني</h4>
+                <p className="text-gray-600 text-sm lg:text-base">خدمة طوارئ مستمرة</p>
+              </div>
+            </div>
+          </div> */}
+
+          {/* كيف نعمل معك */}
           <div className="mt-16 lg:mt-20">
             <h3 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-8 lg:mb-12">كيف نعمل معك؟</h3>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-              <div className="text-center">
-                <div className="bg-red-600 text-white w-12 h-12 lg:w-16 lg:h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-lg lg:text-2xl font-bold">
-                  1
-                </div>
-                <h4 className="text-lg lg:text-xl font-bold text-gray-900 mb-2">التقييم الأولي</h4>
-                <p className="text-gray-600 text-sm lg:text-base">زيارة المنشأة وتقييم احتياجات السلامة</p>
-              </div>
-              <div className="text-center">
-                <div className="bg-red-600 text-white w-12 h-12 lg:w-16 lg:h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-lg lg:text-2xl font-bold">
-                  2
-                </div>
-                <h4 className="text-lg lg:text-xl font-bold text-gray-900 mb-2">التصميم والتخطيط</h4>
-                <p className="text-gray-600 text-sm lg:text-base">وضع خطة شاملة مخصصة لمنشأتك</p>
-              </div>
-              <div className="text-center">
-                <div className="bg-red-600 text-white w-12 h-12 lg:w-16 lg:h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-lg lg:text-2xl font-bold">
-                  3
-                </div>
-                <h4 className="text-lg lg:text-xl font-bold text-gray-900 mb-2">التنفيذ والتركيب</h4>
-                <p className="text-gray-600 text-sm lg:text-base">تركيب الأنظمة بأعلى معايير الجودة</p>
-              </div>
-              <div className="text-center">
-                <div className="bg-red-600 text-white w-12 h-12 lg:w-16 lg:h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-lg lg:text-2xl font-bold">
-                  4
-                </div>
-                <h4 className="text-lg lg:text-xl font-bold text-gray-900 mb-2">المتابعة والصيانة</h4>
-                <p className="text-gray-600 text-sm lg:text-base">صيانة دورية وخدمة عملاء مستمرة</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Enhanced Services Details Section */}
-      <section id="services-details" className="py-16 lg:py-20 bg-gradient-to-br from-gray-50 to-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12 lg:mb-16">
-            <Badge className="bg-red-100 text-red-800 border-red-200 mb-4 hover:bg-red-200 hover:text-red-800">خدماتنا المتخصصة</Badge>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 lg:mb-6">حلول شاملة لجميع احتياجات السلامة</h2>
-            <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto px-4">
-              نقدم مجموعة متكاملة من الخدمات المتخصصة في مجال السلامة ومكافحة الحريق، مصممة خصيصاً لتلبية احتياجات جميع أنواع المنشآت
-            </p>
-          </div>
-
-          {/* Main Services Grid */}
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-16 lg:mb-20">
-            {/* Fire Alarm Systems */}
-            <Card className="border-0 shadow-2xl bg-gradient-to-br from-red-50 to-red-100 hover:shadow-3xl transition-all duration-500">
-              <CardHeader className="pb-6">
-                <div className="flex items-center space-x-4 space-x-reverse mb-4">
-                  <div className="bg-red-600 p-4 rounded-2xl shadow-lg">
-                    <Shield className="h-8 w-8 text-white" />
-                  </div>
-                  <div>
-                    <CardTitle className="text-2xl lg:text-3xl text-gray-900">أنظمة الإنذار المبكر للحرائق</CardTitle>
-                    <CardDescription className="text-lg text-gray-600 mt-2">
-                      تقنيات متطورة للكشف المبكر عن الحرائق وحماية الأرواح والممتلكات
-                    </CardDescription>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="bg-white p-4 rounded-xl shadow-sm">
-                    <div className="flex items-center space-x-3 space-x-reverse mb-3">
-                      <div className="bg-red-100 p-2 rounded-lg">
-                        <CheckCircle className="h-5 w-5 text-red-600" />
-                      </div>
-                      <h4 className="font-bold text-gray-900">كاشفات دخان ذكية</h4>
-                    </div>
-                    <p className="text-gray-600 text-sm">تقنية الاستشعار المتقدم للكشف المبكر عن الدخان</p>
-                  </div>
-                  <div className="bg-white p-4 rounded-xl shadow-sm">
-                    <div className="flex items-center space-x-3 space-x-reverse mb-3">
-                      <div className="bg-red-100 p-2 rounded-lg">
-                        <CheckCircle className="h-5 w-5 text-red-600" />
-                      </div>
-                      <h4 className="font-bold text-gray-900">أنظمة إنذار صوتية</h4>
-                    </div>
-                    <p className="text-gray-600 text-sm">إنذارات عالية الوضوح مع إشارات بصرية</p>
-                  </div>
-                  <div className="bg-white p-4 rounded-xl shadow-sm">
-                    <div className="flex items-center space-x-3 space-x-reverse mb-3">
-                      <div className="bg-red-100 p-2 rounded-lg">
-                        <CheckCircle className="h-5 w-5 text-red-600" />
-                      </div>
-                      <h4 className="font-bold text-gray-900">لوحات تحكم مركزية</h4>
-                    </div>
-                    <p className="text-gray-600 text-sm">مراقبة مركزية متصلة بنظام الإنذار</p>
-                  </div>
-                  <div className="bg-white p-4 rounded-xl shadow-sm">
-                    <div className="flex items-center space-x-3 space-x-reverse mb-3">
-                      <div className="bg-red-100 p-2 rounded-lg">
-                        <CheckCircle className="h-5 w-5 text-red-600" />
-                      </div>
-                      <h4 className="font-bold text-gray-900">تغطية شاملة</h4>
-                    </div>
-                    <p className="text-gray-600 text-sm">حماية لجميع المساحات والزوايا</p>
-                  </div>
-                </div>
-                <div className="bg-red-600 text-white p-4 rounded-xl">
-                  <div className="flex items-center flex-col gap-4 justify-between">
-                    <div>
-                      <h4 className="font-bold text-lg">اختبارات دورية</h4>
-                      <p className="text-red-100">صيانة مستمرة وفحص دوري</p>
-                    </div>
-                    <div className="flex space-x-2 space-x-reverse">
-                      <Button 
-                        className="bg-green-600 hover:bg-green-700 text-white border-0"
-                        onClick={() => window.open('https://wa.me/966555275651', '_blank')}
-                      >
-                        <MessageCircle className="h-4 w-4 ml-2" />
-                        واتساب
-                      </Button>
-                      <Button 
-                        variant="outline" 
-                        className="border-transparent bg-blue-500 text-white hover:bg-white hover:text-red-600"
-                        onClick={() => window.open('tel:+966555275651', '_blank')}
-                      >
-                        <Phone className="h-4 w-4 ml-2" />
-                        اتصال
-                      </Button>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Fire Extinguisher Maintenance */}
-            <Card className="border-0 shadow-2xl bg-gradient-to-br from-orange-50 to-orange-100 hover:shadow-3xl transition-all duration-500">
-              <CardHeader className="pb-6">
-                <div className="flex items-center space-x-4 space-x-reverse mb-4">
-                  <div className="bg-orange-600 p-4 rounded-2xl shadow-lg">
-                    <Wrench className="h-8 w-8 text-white" />
-                  </div>
-                  <div>
-                    <CardTitle className="text-2xl lg:text-3xl text-gray-900">صيانة وفحص معدات الإطفاء</CardTitle>
-                    <CardDescription className="text-lg text-gray-600 mt-2">
-                      خدمات صيانة احترافية لضمان جاهزية المعدات في حالات الطوارئ
-                    </CardDescription>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="bg-white p-4 rounded-xl shadow-sm">
-                    <div className="flex items-center space-x-3 space-x-reverse mb-3">
-                      <div className="bg-orange-100 p-2 rounded-lg">
-                        <CheckCircle className="h-5 w-5 text-orange-600" />
-                      </div>
-                      <h4 className="font-bold text-gray-900">فحص طفايات الحريق</h4>
-                    </div>
-                    <p className="text-gray-600 text-sm">بودرة، CO2، رغوة - فحص شامل</p>
-                  </div>
-                  <div className="bg-white p-4 rounded-xl shadow-sm">
-                    <div className="flex items-center space-x-3 space-x-reverse mb-3">
-                      <div className="bg-orange-100 p-2 rounded-lg">
-                        <CheckCircle className="h-5 w-5 text-orange-600" />
-                      </div>
-                      <h4 className="font-bold text-gray-900">اختبار ضغط الخراطيم</h4>
-                    </div>
-                    <p className="text-gray-600 text-sm">فحص خراطيم المياه والصمامات</p>
-                  </div>
-                  <div className="bg-white p-4 rounded-xl shadow-sm">
-                    <div className="flex items-center space-x-3 space-x-reverse mb-3">
-                      <div className="bg-orange-100 p-2 rounded-lg">
-                        <CheckCircle className="h-5 w-5 text-orange-600" />
-                      </div>
-                      <h4 className="font-bold text-gray-900">صيانة الرش التلقائي</h4>
-                    </div>
-                    <p className="text-gray-600 text-sm">أنظمة الرش التلقائي والصيانة</p>
-                  </div>
-                  <div className="bg-white p-4 rounded-xl shadow-sm">
-                    <div className="flex items-center space-x-3 space-x-reverse mb-3">
-                      <div className="bg-orange-100 p-2 rounded-lg">
-                        <CheckCircle className="h-5 w-5 text-orange-600" />
-                      </div>
-                      <h4 className="font-bold text-gray-900">تقارير فنية معتمدة</h4>
-                    </div>
-                    <p className="text-gray-600 text-sm">شهادات صلاحية وتقارير مفصلة</p>
-                  </div>
-                </div>
-                <div className="bg-orange-600 text-white p-4 rounded-xl">
-                  <div className="flex items-center flex-col gap-4 justify-between">
-                    <div>
-                      <h4 className="font-bold text-lg">استبدال القطع التالفة</h4>
-                      <p className="text-orange-100">قطع أصلية مع ضمان الجودة</p>
-                    </div>
-                    <div className="flex space-x-2 space-x-reverse">
-                      <Button 
-                        className="bg-green-600 hover:bg-green-700 text-white border-0"
-                        onClick={() => window.open('https://wa.me/966555275651', '_blank')}
-                      >
-                        <MessageCircle className="h-4 w-4 ml-2" />
-                        واتساب
-                      </Button>
-                      <Button 
-                        variant="outline" 
-                        className="border-transparent bg-blue-500 text-white hover:bg-white hover:text-red-600"
-                        onClick={() => window.open('tel:+966555275651', '_blank')}
-                      >
-                        <Phone className="h-4 w-4 ml-2" />
-                        اتصال
-                      </Button>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Additional Services Grid */}
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
-            {/* Maintenance Contracts */}
-            <Card className="border-0 shadow-2xl bg-gradient-to-br from-[#897c71]/5 to-[#897c71]/10 hover:shadow-3xl transition-all duration-500">
-              <CardHeader className="pb-6">
-                <div className="flex items-center space-x-4 space-x-reverse mb-4">
-                  <div className="bg-[#897c71] p-4 rounded-2xl shadow-lg">
-                    <Clock className="h-8 w-8 text-white" />
-                  </div>
-                  <div>
-                    <CardTitle className="text-2xl lg:text-3xl text-gray-900">عقود الصيانة الشاملة</CardTitle>
-                    <CardDescription className="text-lg text-gray-600 mt-2">
-                      برامج صيانة مخصصة لضمان استمرارية عمل أنظمة السلامة
-                    </CardDescription>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="bg-white p-4 rounded-xl shadow-sm">
-                    <div className="flex items-center space-x-3 space-x-reverse mb-3">
-                      <div className="bg-[#897c71]/10 p-2 rounded-lg">
-                        <CheckCircle className="h-5 w-5 text-[#897c71]" />
-                      </div>
-                      <h4 className="font-bold text-gray-900">صيانة وقائية مجدولة</h4>
-                    </div>
-                    <p className="text-gray-600 text-sm">حسب المعايير الدولية</p>
-                  </div>
-                  <div className="bg-white p-4 rounded-xl shadow-sm">
-                    <div className="flex items-center space-x-3 space-x-reverse mb-3">
-                      <div className="bg-[#897c71]/10 p-2 rounded-lg">
-                        <CheckCircle className="h-5 w-5 text-[#897c71]" />
-                      </div>
-                      <h4 className="font-bold text-gray-900">فريق طوارئ 24/7</h4>
-                    </div>
-                    <p className="text-gray-600 text-sm">متاح على مدار الساعة</p>
-                  </div>
-                  <div className="bg-white p-4 rounded-xl shadow-sm">
-                    <div className="flex items-center space-x-3 space-x-reverse mb-3">
-                      <div className="bg-[#897c71]/10 p-2 rounded-lg">
-                        <CheckCircle className="h-5 w-5 text-[#897c71]" />
-                      </div>
-                      <h4 className="font-bold text-gray-900">تحديث الأنظمة القديمة</h4>
-                    </div>
-                    <p className="text-gray-600 text-sm">ترقية للتقنيات الحديثة</p>
-                  </div>
-                  <div className="bg-white p-4 rounded-xl shadow-sm">
-                    <div className="flex items-center space-x-3 space-x-reverse mb-3">
-                      <div className="bg-[#897c71]/10 p-2 rounded-lg">
-                        <CheckCircle className="h-5 w-5 text-[#897c71]" />
-                      </div>
-                      <h4 className="font-bold text-gray-900">تدريب الموظفين</h4>
-                    </div>
-                    <p className="text-gray-600 text-sm">تدريب على الاستخدام الصحيح</p>
-                  </div>
-                </div>
-                <div className="bg-[#897c71] text-white p-4 rounded-xl">
-                  <div className="flex items-center flex-col gap-4 justify-between">
-                    <div>
-                      <h4 className="font-bold text-lg">تقارير شهرية مفصلة</h4>
-                      <p className="text-white">متابعة مستمرة وحالة الأنظمة</p>
-                    </div>
-                    <div className="flex space-x-2 space-x-reverse">
-                      <Button 
-                        className="bg-green-600 hover:bg-green-700 text-white border-0"
-                        onClick={() => window.open('https://wa.me/966555275651', '_blank')}
-                      >
-                        <MessageCircle className="h-4 w-4 ml-2" />
-                        واتساب
-                      </Button>
-                      <Button 
-                        variant="outline" 
-                        className="border-white bg-[#897c71]/80 text-white hover:bg-white hover:text-[#897c71]"
-                        onClick={() => window.open('tel:+966555275651', '_blank')}
-                      >
-                        <Phone className="h-4 w-4 ml-2" />
-                        اتصال
-                      </Button>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Safety Certificates */}
-            <Card className="border-0 shadow-2xl bg-gradient-to-br from-green-50 to-green-100 hover:shadow-3xl transition-all duration-500">
-              <CardHeader className="pb-6">
-                <div className="flex items-center space-x-4 space-x-reverse mb-4">
-                  <div className="bg-[#514740] p-4 rounded-2xl shadow-lg">
-                    <FileCheck className="h-8 w-8 text-white" />
-                  </div>
-                  <div>
-                    <CardTitle className="text-2xl lg:text-3xl text-gray-900">استخراج شهادات السلامة</CardTitle>
-                    <CardDescription className="text-lg text-gray-600 mt-2">
-                      مساعدة شاملة للحصول على جميع التراخيص والشهادات المطلوبة
-                    </CardDescription>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="bg-white p-4 rounded-xl shadow-sm">
-                    <div className="flex items-center space-x-3 space-x-reverse mb-3">
-                      <div className="bg-green-100 p-2 rounded-lg">
-                        <CheckCircle className="h-5 w-5 text-green-600" />
-                      </div>
-                      <h4 className="font-bold text-gray-900">تقييم شامل</h4>
-                    </div>
-                    <p className="text-gray-600 text-sm">وفق اشتراطات الدفاع المدني</p>
-                  </div>
-                  <div className="bg-white p-4 rounded-xl shadow-sm">
-                    <div className="flex items-center space-x-3 space-x-reverse mb-3">
-                      <div className="bg-green-100 p-2 rounded-lg">
-                        <CheckCircle className="h-5 w-5 text-green-600" />
-                      </div>
-                      <h4 className="font-bold text-gray-900">إعداد الوثائق</h4>
-                    </div>
-                    <p className="text-gray-600 text-sm">المستندات والمتابعة الرسمية</p>
-                  </div>
-                  <div className="bg-white p-4 rounded-xl shadow-sm">
-                    <div className="flex items-center space-x-3 space-x-reverse mb-3">
-                      <div className="bg-green-100 p-2 rounded-lg">
-                        <CheckCircle className="h-5 w-5 text-green-600" />
-                      </div>
-                      <h4 className="font-bold text-gray-900">متابعة الجهات الرسمية</h4>
-                    </div>
-                    <p className="text-gray-600 text-sm">متابعة مع الدفاع المدني</p>
-                  </div>
-                  <div className="bg-white p-4 rounded-xl shadow-sm">
-                    <div className="flex items-center space-x-3 space-x-reverse mb-3">
-                      <div className="bg-green-100 p-2 rounded-lg">
-                        <CheckCircle className="h-5 w-5 text-green-600" />
-                      </div>
-                      <h4 className="font-bold text-gray-900">تنبيهات انتهاء الصلاحية</h4>
-                    </div>
-                    <p className="text-gray-600 text-sm">تذكير بالتجديد في الوقت المناسب</p>
-                  </div>
-                </div>
-                <div className="bg-green-600 text-white p-4 rounded-xl">
-                  <div className="flex items-center flex-col gap-4 justify-between">
-                    <div >
-                      <h4 className="font-bold text-lg">خدمات التجديد السريع</h4>
-                      <p className="text-green-100">تجديد سريع وفعال</p>
-                    </div>
-                    <div className="flex space-x-2 space-x-reverse">
-                      <Button 
-                        className="bg-green-600 hover:bg-green-700 text-white border-0"
-                        onClick={() => window.open('https://wa.me/966555275651', '_blank')}
-                      >
-                        <MessageCircle className="h-4 w-4 ml-2" />
-                        واتساب
-                      </Button>
-                      <Button 
-                        variant="outline" 
-                        className="border-transparent text-white bg-blue-500 hover:bg-white hover:text-green-600"
-                        onClick={() => window.open('tel:+966555275651', '_blank')}
-                      >
-                        <Phone className="h-4 w-4 ml-2" />
-                        اتصال
-                      </Button>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Service Process Flow */}
-          <div className="mt-16 lg:mt-20 bg-white rounded-3xl shadow-2xl p-8 lg:p-12 ">
-            <h3 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-8 lg:mb-12">كيف نعمل معك؟</h3>
-            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
               <div className="text-center group">
                 <div className="bg-gradient-to-br from-red-500 to-red-600 text-white w-16 h-16 lg:w-20 lg:h-20 rounded-full flex items-center justify-center mx-auto mb-6 text-xl lg:text-2xl font-bold shadow-lg group-hover:scale-110 transition-transform duration-300">
                   1
                 </div>
                 <h4 className="text-xl lg:text-2xl font-bold text-gray-900 mb-4">التقييم الأولي</h4>
                 <p className="text-gray-600 text-sm lg:text-base leading-relaxed">زيارة المنشأة وتقييم احتياجات السلامة الشاملة مع فريق متخصص</p>
-         
               </div>
               <div className="text-center group">
                 <div className="bg-gradient-to-br from-[#897c71] to-[#897c71]/80 text-white w-16 h-16 lg:w-20 lg:h-20 rounded-full flex items-center justify-center mx-auto mb-6 text-xl lg:text-2xl font-bold shadow-lg group-hover:scale-110 transition-transform duration-300">
@@ -918,7 +619,6 @@ export default function HomePage() {
                 </div>
                 <h4 className="text-xl lg:text-2xl font-bold text-gray-900 mb-4">التصميم والتخطيط</h4>
                 <p className="text-gray-600 text-sm lg:text-base leading-relaxed">وضع خطة شاملة مخصصة لمنشأتك مع أحدث التقنيات</p>
-         
               </div>
               <div className="text-center group">
                 <div className="bg-gradient-to-br from-green-500 to-green-600 text-white w-16 h-16 lg:w-20 lg:h-20 rounded-full flex items-center justify-center mx-auto mb-6 text-xl lg:text-2xl font-bold shadow-lg group-hover:scale-110 transition-transform duration-300">
@@ -926,7 +626,6 @@ export default function HomePage() {
                 </div>
                 <h4 className="text-xl lg:text-2xl font-bold text-gray-900 mb-4">التنفيذ والتركيب</h4>
                 <p className="text-gray-600 text-sm lg:text-base leading-relaxed">تركيب الأنظمة بأعلى معايير الجودة والسلامة</p>
-            
               </div>
               <div className="text-center group">
                 <div className="bg-gradient-to-br from-orange-500 to-orange-600 text-white w-16 h-16 lg:w-20 lg:h-20 rounded-full flex items-center justify-center mx-auto mb-6 text-xl lg:text-2xl font-bold shadow-lg group-hover:scale-110 transition-transform duration-300">
@@ -934,7 +633,6 @@ export default function HomePage() {
                 </div>
                 <h4 className="text-xl lg:text-2xl font-bold text-gray-900 mb-4">المتابعة والصيانة</h4>
                 <p className="text-gray-600 text-sm lg:text-base leading-relaxed">صيانة دورية وخدمة عملاء مستمرة على مدار الساعة</p>
-           
               </div>
             </div>
           </div>
@@ -1183,9 +881,9 @@ export default function HomePage() {
                     <category.icon className="h-6 w-6 lg:h-8 lg:w-8 text-red-600" />
                   </div>
                   <h3 className="font-bold text-gray-900 mb-2 text-sm lg:text-base">{category.name}</h3>
-                  <Badge variant="secondary" className="bg-red-100 text-red-800 text-xs">
+                  {/* <Badge variant="secondary" className="bg-red-100 text-red-800 text-xs">
                     {category.count} مشروع
-                  </Badge>
+                  </Badge> */}
                 </CardContent>
               </Card>
             ))}
@@ -1215,11 +913,11 @@ export default function HomePage() {
                 </Card>
               ))}
             </div>
-            <div className="text-center mt-6 lg:mt-8">
+            {/* <div className="text-center mt-6 lg:mt-8">
               <Button variant="outline" className="border-red-600 text-red-600 hover:bg-red-50 bg-transparent">
                 عرض جميع المشاريع
               </Button>
-            </div>
+            </div> */}
           </div>
 
           {/* Enhanced Project Success Metrics */}
@@ -1501,9 +1199,9 @@ export default function HomePage() {
                     className="bg-gray-800 p-2 lg:p-3 rounded-lg hover:bg-red-600 transition-colors cursor-pointer"
                     onClick={() => window.open('https://www.snapchat.com/add/firefightbas?share_id=DR1GAX_SMJA&locale=ar-EG', '_blank')}
                   >
-                    <svg className="h-4 w-4 lg:h-5 lg:w-5" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.746-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001 12.017.001z"/>
-                    </svg>
+                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path d="M5.829 4.533c-.6 1.344-.363 3.752-.267 5.436-.648.359-1.48-.271-1.951-.271-.49 0-1.075.322-1.167.802-.066.346.089.85 1.201 1.289.43.17 1.453.37 1.69.928.333.784-1.71 4.403-4.918 4.931-.251.041-.43.265-.416.519.056.975 2.242 1.357 3.211 1.507.099.134.179.7.306 1.131.057.193.204.424.582.424.493 0 1.312-.38 2.738-.144 1.398.233 2.712 2.215 5.235 2.215 2.345 0 3.744-1.991 5.09-2.215.779-.129 1.448-.088 2.196.058.515.101.977.157 1.124-.349.129-.437.208-.992.305-1.123.96-.149 3.156-.53 3.211-1.505.014-.254-.165-.477-.416-.519-3.154-.52-5.259-4.128-4.918-4.931.236-.557 1.252-.755 1.69-.928.814-.321 1.222-.716 1.213-1.173-.011-.585-.715-.934-1.233-.934-.527 0-1.284.624-1.897.286.096-1.698.332-4.095-.267-5.438-1.135-2.543-3.66-3.829-6.184-3.829-2.508 0-5.014 1.268-6.158 3.833z" fill="#fff"/>
+                </svg>
                   </div>
                 </div>
               </div>
@@ -1762,7 +1460,7 @@ export default function HomePage() {
               </div>
               <div className="bg-gray-800 p-3 lg:p-4 rounded-lg">
                 <MapPin className="h-6 w-6 lg:h-8 lg:w-8 text-red-400 mx-auto mb-2" />
-                <p className="font-medium text-sm lg:text-base">جدة</p>
+                <p className="font-medium text-sm lg:text-base">طريق الدمام الرياض</p>
               </div>
               <div className="bg-gray-800 p-3 lg:p-4 rounded-lg">
                 <MapPin className="h-6 w-6 lg:h-8 lg:w-8 text-red-400 mx-auto mb-2" />
@@ -1790,7 +1488,7 @@ export default function HomePage() {
                 <p className="text-gray-400 text-xs lg:text-sm">© 2024 خدمات السلامة ومكافحة الحريق. جميع الحقوق محفوظة.</p>
               </div>
               <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6 space-x-reverse">
-         <span className="text-gray-400 text-xs lg:text-sm"> تم تصميم وتطوير من قبل <a href="https://goldenmoonads.com/" className="text-red-400">  شركة القمر الذهبي</a></span>
+         <span className="text-gray-400 text-xs lg:text-sm"> تم تصميم وتطوير من قبل <a href="https://fashne.net/" className="text-red-400">  شركة الفشني للتسويق الالكتروني</a></span>
               </div>
               <div>
                 <p className="text-gray-400 text-xs lg:text-sm">صُمم بعناية لخدمة السلامة في المملكة العربية السعودية</p>
@@ -1835,3 +1533,4 @@ export default function HomePage() {
     </div>
   )
 }
+
