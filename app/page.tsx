@@ -260,7 +260,7 @@ export default function HomePage() {
             <div className="relative order-first lg:order-last">
               <div className="bg-white p-4 sm:p-6 lg:p-8 rounded-2xl shadow-2xl">
                 <img
-                  src="/placeholder.svg?height=400&width=500"
+                  src="/logo.png"
                   alt="أنظمة مكافحة الحريق"
                   className="rounded-lg w-full h-auto"
                 />
