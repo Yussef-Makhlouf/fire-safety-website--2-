@@ -1403,17 +1403,14 @@ export default function HomePage() {
           </div>
 
           {/* Enhanced Social Media Section */}
-          <div className="mt-12 lg:mt-16 text-center">
+          <div className="mt-12 lg:mt-16 text-center flex flex-col items-center justify-center">
             <h3 className="text-2xl sm:text-3xl font-bold text-white mb-6 lg:mb-8">تابعنا على وسائل التواصل الاجتماعي</h3>
-            <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 space-x-reverse">
+            <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 space-x-reverse" dir="ltr">
               <Button size="lg" className="bg-white text-red-600 hover:bg-gray-100 px-6 lg:px-8 py-3 lg:py-4 text-sm lg:text-base">
                 <Instagram className="h-5 w-5 lg:h-6 lg:w-6 ml-2" />
                 إنستغرام
               </Button>
-              <Button size="lg" className="bg-white text-red-600 hover:bg-gray-100 px-6 lg:px-8 py-3 lg:py-4 text-sm lg:text-base">
-                <Linkedin className="h-5 w-5 lg:h-6 lg:w-6 ml-2" />
-                لينكد إن
-              </Button>
+         
               <Button size="lg" className="bg-white text-red-600 hover:bg-gray-100 px-6 lg:px-8 py-3 lg:py-4 text-sm lg:text-base">
                 <Twitter className="h-5 w-5 lg:h-6 lg:w-6 ml-2" />
                 تويتر
