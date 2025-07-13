@@ -37,76 +37,238 @@ export default function HomePage() {
     { name: "شركة سقالة الأدوية", type: "مستودعات", location: "السلي الرياض" },
     { name: "شركة الرياض القابضة", type: "حراج بن قاسم", location: "العزيزية الرياض" },
     { name: "شركة الرياض القابضة", type: "مول بوابة الرياض", location: "العقيق - الرياض" },
-    { name: "شركة الرياض القابضة", type: "مدينة تجمع لندن", location: "طريق الملك فهد الرياض" },
+    { name: "شركة الرياض القابضة", type: "مدينة تجمع المعادن", location: "طريق الدمام الرياض" },
     { name: "شركة الرياض القابضة", type: "مركز الشرق لقطع غيار السيارات", location: "السلي الرياض" },
-    { name: "شركة ميرام الرياض", type: "سوق الذهب", location: "العزيزية الرياض" },
+    { name: "سوبر ماركت ميرام الرياض", type: "سوبر ماركت", location: "الجنادرية الرياض" },
     { name: "شركة ادل العقارية", type: "مجمع سكني", location: "الجنادرية الرياض" },
     { name: "مصنع ازان المعدان", type: "مصنع", location: "السلي الرياض" },
     { name: "شركة صروح للتقنيات", type: "مستودعات ومجمعات سكنية", location: "طريق الخرج الرياض" },
     { name: "كلية الملك خالد الجوية", type: "مجمعات سكنية", location: "المجمعة الرياض" },
-    { name: "شركة علم أيزان", type: "معارض", location: "حي الملك فهد الرياض" },
-    { name: "شركة ديكورات باسل", type: "معارض", location: "النخيل الرياض" },
+    { name: "شركة حلم المنزل", type: "معارض", location: "حي الملك فهد الرياض" },
+    { name: "شركة ديكورات باسل", type: "معارض", location: "الخزان الرياض" },
     { name: "شركة أنظمة جدة", type: "معارض", location: "العليا الرياض" },
     { name: "شركة مشارق العقارية", type: "مجمعات سكنية", location: "اليرموك الرياض" },
     { name: "مدارس التميز الأهلية", type: "مدارس", location: "غرناطة الرياض" },
+    { name: "مصنع النور للرسالة", type: "مصنع", location: "السلي الرياض" },
+    { name: "شركة صروح للتقنيات", type: "أسواق تجارية", location: "السلي الرياض" },
+    { name: "شركة مساحات الأعمال المحدودة", type: "أسواق تجارية", location: "طريق الدمام الرياض" },
+    { name: "شركة الأداء العالي", type: "ورش سيارات", location: "جميع أنحاء المملكة" },
+    { name: "شركة عبدالله حمد العيسى", type: "معارض", location: "الرياض" },
+    { name: "شركة عبدالعزيز وسعد المحجل للتجارة والاستثمار", type: "مجمعات سكنية", location: "المنار الرياض" },
+    { name: "مؤسسة مبارك الصفر لمقاولات العامة", type: "معارض", location: "البطحاء الرياض" },
+    { name: "شركة حياة السعودية", type: "مصنع حدادة", location: "السلي الرياض" },
+    { name: "شركة التنمية الغذائية", type: "مكتب صرافة", location: "المدينة المنورة" },
+    { name: "مؤسسة محمد صبري للصرافة", type: "مكتب صرافة", location: "مكة" },
+    { name: "شركة زاد الازدهار", type: "تموينات", location: "الرياض" },
+    { name: "مكتب أحمد المحاماة", type: "مكتب محاماة", location: "الرياض" },
+    { name: "شركة فيلان", type: "سيارات", location: "الصناعية الرياض" },
+    { name: "الشركة الوطنية الطبية", type: "مجمع طبي", location: "الدمام" },
+    { name: "محطة وقود", type: "محطة وقود", location: "الرياض" },
+    { name: "مكتب المحاماة القانونية", type: "مكتب محاماة", location: "الرياض" },
+    { name: "مصنع اللوح الجبسية", type: "مصنع", location: "الرياض" },
+    { name: "ورشة اثاث", type: "ورشة اثاث", location: "الرياض" },
+    { name: "شركة مقاولات", type: "شركة مقاولات", location: "الرياض" },
+    { name: "مجمع طبي", type: "مجمع طبي", location: "الخرج" },
+    { name: "مركز التخصصي لطب الأسنان", type: "مجمع طبي", location: "الرياض" },
+    { name: "شركة النور لتنظيم المعارض والمؤتمرات", type: "معارض", location: "الرياض" },
+    { name: "شركة خدمات البلدية المحدودة", type: "معارض", location: "الرياض" },
+    { name: "مطعم", type: "مطعم", location: "الرياض" },
+    { name: "معرض", type: "معرض", location: "الرياض" },
+    { name: "معرض", type: "معرض", location: "الرياض" },
+    { name: "معرض", type: "معرض", location: "الرياض" },
+    { name: "محل جودانو مول للورود", type: "معرض", location: "الرياض" },
+    { name: "محل السلام مول", type: "معرض", location: "الرياض" },
+    { name: "محل ماكس للعطور السلام مول", type: "معرض", location: "الرياض" },
   ]
 
   const services = [
     {
       icon: Shield,
-      title: "أنظمة الإنذار المبكر للحرائق",
-      description: "تقنيات متطورة للكشف المبكر عن الحرائق وحماية الأرواح والممتلكات",
+      title: "توريد وتركيب وصيانة أنظمة الإطفاء المتكاملة",
+      description: "نقدم حلول إطفاء شاملة ومتطورة تشمل جميع أنواع أنظمة الإطفاء المطلوبة للمنشآت المختلفة، مع ضمان أعلى معايير الجودة والسلامة وفقاً للمواصفات العالمية",
       features: [
-        "كاشفات دخان ذكية بتقنية الاستشعار المتقدم",
-        "أنظمة إنذار صوتية ومرئية عالية الوضوح",
-        "لوحات تحكم مركزية متصلة بالمراقبة",
-        "تغطية شاملة لجميع المساحات والزوايا",
-        "اختبارات دورية وصيانة مستمرة",
+        "تركيب أنظمة الرش التلقائي (Sprinkler Systems) للمباني التجارية والسكنية",
+        "أنظمة إطفاء الغازات النظيفة (CO2, FM-200, Novec 1230) للمراكز الحساسة",
+        "أنظمة إطفاء الرغوة (Foam Systems) للمستودعات والمراكز الصناعية",
+        "أنظمة إطفاء المطابخ المتخصصة (Kitchen Hood Systems) للمطاعم والفنادق",
+        "أنظمة إطفاء المساحات المحمية (Total Flooding Systems) للمراكز الحساسة",
+        "مضخات الحريق الرئيسية والمساعدة مع خزانات المياه المخصصة",
+        "أنظمة إطفاء محمولة ومتنقلة للاستخدام في الحالات الطارئة",
+        "صيانة دورية شاملة لجميع مكونات أنظمة الإطفاء",
       ],
       color: "bg-red-50 border-red-200",
       iconColor: "text-red-600",
     },
     {
       icon: Wrench,
-      title: "صيانة وفحص معدات الإطفاء",
-      description: "خدمات صيانة احترافية لضمان جاهزية المعدات في حالات الطوارئ",
+      title: "توريد وتركيب وصيانة أنظمة الإنذار المبكر عن الحريق",
+      description: "أنظمة إنذار ذكية ومتطورة للكشف المبكر عن الحرائق مع تقنيات استشعار متقدمة وربط مركزي مع أجهزة المراقبة والتحكم",
       features: [
-        "فحص طفايات الحريق (بودرة، CO2، رغوة)",
-        "اختبار ضغط خراطيم المياه والصمامات",
-        "صيانة أنظمة الرش التلقائي",
-        "تقارير فنية معتمدة وشهادات صلاحية",
-        "استبدال القطع التالفة بأخرى أصلية",
+        "كاشفات دخان ذكية بتقنية الاستشعار المتقدم (Ionization & Photoelectric)",
+        "كاشفات حرارة حساسة للكشف عن الارتفاع المفاجئ في درجة الحرارة",
+        "كاشفات لهب متطورة للكشف عن الحرائق في المراحل المبكرة",
+        "أنظمة إنذار صوتية ومرئية عالية الوضوح مع أضواء تحذيرية",
+        "لوحات تحكم مركزية متطورة مع شاشات عرض رقمية",
+        "أنظمة إنذار لاسلكية للمناطق الصعبة والبعيدة",
+        "ربط الأنظمة مع أجهزة المراقبة المركزية والهواتف الذكية",
+        "أنظمة إنذار متخصصة للمطابخ والمناطق الصناعية",
+        "اختبارات دورية شاملة وصيانة وقائية مستمرة",
+        "تقارير فنية مفصلة مع خرائط توزيع الكاشفات",
       ],
       color: "bg-orange-50 border-orange-200",
       iconColor: "text-orange-600",
     },
     {
       icon: Clock,
-      title: "عقود الصيانة الشاملة",
-      description: "برامج صيانة مخصصة لضمان استمرارية عمل أنظمة السلامة",
+      title: "صيانة وتعبئة طفايات الحريق بجميع أنواعها",
+      description: "خدمات صيانة احترافية شاملة لجميع أنواع طفايات الحريق مع تعبئة دورية وفحص شامل لضمان الجاهزية التامة",
       features: [
-        "صيانة وقائية مجدولة حسب المعايير",
-        "فريق طوارئ متاح 24/7",
-        "تحديث الأنظمة القديمة",
-        "تدريب الموظفين على الاستخدام",
-        "تقارير شهرية مفصلة",
+        "صيانة طفايات البودرة الجافة (ABC, BC) لجميع أنواع الحرائق",
+        "تعبئة وفحص طفايات ثاني أكسيد الكربون (CO2) للمعدات الإلكترونية",
+        "صيانة طفايات الرغوة (Foam) للمواد السائلة القابلة للاشتعال",
+        "فحص طفايات الماء والضغط العالي للمواد الصلبة",
+        "اختبار ضغط الخزانات والخراطيم والصمامات",
+        "استبدال القطع التالفة بأخرى أصلية مع ضمان الجودة",
+        "تنظيف وتعقيم جميع مكونات الطفايات",
+        "إعادة طلاء الطفايات وتجديد العلامات التحذيرية",
+        "تقارير فنية معتمدة وشهادات صلاحية رسمية",
+        "خدمة طوارئ 24/7 لصيانة الطفايات في الحالات العاجلة",
       ],
       color: "bg-blue-50 border-blue-200",
       iconColor: "text-blue-600",
     },
     {
       icon: FileCheck,
-      title: "استخراج شهادات السلامة",
-      description: "مساعدة شاملة للحصول على جميع التراخيص والشهادات المطلوبة",
+      title: "أنظمة الإطفاء المخصصة والمتخصصة",
+      description: "حلول إطفاء متخصصة ومتقدمة مصممة خصيصاً للمنشآت الحساسة والصناعية مع أحدث التقنيات العالمية",
       features: [
-        "تقييم شامل وفق اشتراطات الدفاع المدني",
-        "إعداد الوثائق والمستندات",
-        "متابعة مع الجهات الرسمية",
-        "تنبيهات انتهاء الصلاحية",
-        "خدمات التجديد السريع",
+        "أنظمة إطفاء المطابخ المتطورة (Kitchen Hood Suppression Systems)",
+        "أنظمة إطفاء ثاني أكسيد الكربون (CO2 Systems) للمراكز الحساسة",
+        "أنظمة إطفاء FM-200 للمراكز الطبية والمختبرات",
+        "أنظمة إطفاء الرغوة المتخصصة للمستودعات النفطية",
+        "أنظمة إطفاء المساحات المحمية (Total Flooding) للمراكز الحساسة",
+        "أنظمة إطفاء الغازات النظيفة للمراكز الإلكترونية والبيانات",
+        "أنظمة إطفاء متخصصة للمصانع والورش الصناعية",
+        "أنظمة إطفاء المولدات الكهربائية والمحولات",
+        "صيانة دورية شاملة لجميع الأنظمة المتخصصة",
+        "تدريب فرق العمل على استخدام الأنظمة المتخصصة",
       ],
       color: "bg-green-50 border-green-200",
       iconColor: "text-green-600",
+    },
+    {
+      icon: Settings,
+      title: "توريد وتركيب وصيانة مضخات الحريق",
+      description: "مضخات حريق عالية الكفاءة مصممة لتوفير الضغط المطلوب لأنظمة الإطفاء مع ضمان الاستمرارية والموثوقية",
+      features: [
+        "مضخات حريق كهربائية عالية الكفاءة (Electric Fire Pumps)",
+        "مضخات حريق ديزل احتياطية (Diesel Fire Pumps)",
+        "مضخات حريق رأسية وأفقية بجميع الأحجام",
+        "مضخات حريق متعددة المراحل للمباني العالية",
+        "أنظمة تحكم متطورة لمضخات الحريق مع لوحات تحكم ذكية",
+        "خزانات مياه مخصصة لأنظمة الحريق مع عوازل حرارية",
+        "أنظمة تلقائية لبدء تشغيل المضخات عند الحاجة",
+        "صيانة دورية شاملة للمضخات والمحركات",
+        "اختبارات ضغط دورية لضمان الكفاءة المطلوبة",
+        "تقارير فنية مفصلة مع خرائط توزيع المياه",
+      ],
+      color: "bg-purple-50 border-purple-200",
+      iconColor: "text-purple-600",
+    },
+    {
+      icon: Building,
+      title: "أنظمة الإطفاء بالرغوة المتطورة",
+      description: "أنظمة إطفاء بالرغوة عالية الكفاءة مصممة خصيصاً للمواد السائلة القابلة للاشتعال والمنشآت الصناعية",
+      features: [
+        "أنظمة رغوة عالية التوسع للمستودعات النفطية",
+        "أنظمة رغوة متوسطة التوسع للمواد الكيميائية",
+        "أنظمة رغوة منخفضة التوسع للمساحات المفتوحة",
+        "مولدات رغوة متطورة مع أنظمة خلط دقيقة",
+        "أنظمة رش رغوة تلقائية للمساحات الكبيرة",
+        "خزانات رغوة مركزية مع أنظمة توزيع متطورة",
+        "أنظمة رغوة محمولة للاستخدام في الحالات الطارئة",
+        "صيانة دورية شاملة لأنظمة الرغوة والمولدات",
+        "تدريب فرق العمل على استخدام أنظمة الرغوة",
+        "تقارير فنية مفصلة مع اختبارات كفاءة دورية",
+      ],
+      color: "bg-indigo-50 border-indigo-200",
+      iconColor: "text-indigo-600",
+    },
+    {
+      icon: Shield,
+      title: "توريد وتركيب أبواب الطوارئ وسلالم الطوارئ",
+      description: "أبواب طوارئ وسلالم احتياطية مصممة وفق أعلى معايير السلامة لضمان إخلاء آمن وسريع في حالات الطوارئ",
+      features: [
+        "أبواب طوارئ مقاومة للحريق بجميع المقاسات والأنواع",
+        "أبواب طوارئ كهربائية مع أنظمة فتح تلقائي",
+        "أبواب طوارئ ميكانيكية مع أنظمة إغلاق تلقائي",
+        "سلالم طوارئ خارجية وداخلية بجميع الأنواع",
+        "سلالم طوارئ دوارة للمباني العالية",
+        "سلالم طوارئ مائلة مع درابزينات أمان",
+        "أنظمة إضاءة طوارئ للسلالم والأبواب",
+        "أنظمة إشارات ضوئية وصوتية للأبواب",
+        "صيانة دورية شاملة للأبواب والسلالم",
+        "اختبارات دورية لضمان سهولة الفتح والإغلاق",
+      ],
+      color: "bg-yellow-50 border-yellow-200",
+      iconColor: "text-yellow-600",
+    },
+    {
+      icon: Clock,
+      title: "عقود صيانة شاملة لأنظمة السلامة",
+      description: "برامج صيانة وقائية شاملة ومخصصة لجميع أنظمة السلامة مع ضمان الاستمرارية والكفاءة العالية",
+      features: [
+        "صيانة وقائية مجدولة لجميع أنظمة السلامة",
+        "فحص دوري شامل لأنظمة الإنذار والإطفاء",
+        "صيانة دورية لمضخات الحريق وأنظمة الرش",
+        "فحص وتعبئة طفايات الحريق بشكل دوري",
+        "صيانة أنظمة الرغوة والغازات النظيفة",
+        "فحص أبواب الطوارئ وسلالم الطوارئ",
+        "تحديث الأنظمة القديمة وتطويرها",
+        "تدريب فرق العمل على الصيانة والاستخدام",
+        "تقارير شهرية مفصلة مع توصيات التحسين",
+        "خدمة طوارئ 24/7 للصيانة العاجلة",
+      ],
+      color: "bg-teal-50 border-teal-200",
+      iconColor: "text-teal-600",
+    },
+    {
+      icon: FileCheck,
+      title: "استخراج شهادات السلامة واعتماد مخططات السلامة",
+      description: "خدمات شاملة لاستخراج جميع شهادات السلامة المطلوبة واعتماد مخططات السلامة من الجهات الرسمية",
+      features: [
+        "تقييم شامل للمنشأة وفق اشتراطات الدفاع المدني",
+        "إعداد مخططات السلامة التفصيلية للمنشآت",
+        "متابعة اعتماد المخططات من الجهات الرسمية",
+        "استخراج شهادات السلامة لجميع أنواع المنشآت",
+        "تجديد الشهادات قبل انتهاء صلاحيتها",
+        "إعداد التقارير الفنية المطلوبة للجهات الرسمية",
+        "متابعة مع الدفاع المدني والبلديات",
+        "استخراج تراخيص السلامة للمنشآت الجديدة",
+        "تحديث الشهادات عند تجديد أو تطوير المنشآت",
+        "خدمات استشارية في مجال متطلبات السلامة",
+      ],
+      color: "bg-pink-50 border-pink-200",
+      iconColor: "text-pink-600",
+    },
+    {
+      icon: Award,
+      title: "التقرير الفني الهندسي الشامل",
+      description: "تقارير فنية هندسية مفصلة ومحترفة تشمل جميع جوانب أنظمة السلامة مع توصيات تحسينية شاملة",
+      features: [
+        "تقييم شامل لجميع أنظمة السلامة الموجودة",
+        "تحليل المخاطر المحتملة وتحديد نقاط الضعف",
+        "إعداد تقارير فنية مفصلة مع الصور والخرائط",
+        "توصيات تحسينية شاملة لأنظمة السلامة",
+        "تقييم مدى مطابقة الأنظمة للمعايير العالمية",
+        "تحليل التكلفة والعائد للتحسينات المقترحة",
+        "إعداد خطط تطوير مرحلية لأنظمة السلامة",
+        "تقارير دورية عن حالة أنظمة السلامة",
+        "تقييم أداء الأنظمة بعد التطوير",
+        "تقارير فنية معتمدة للجهات الرسمية",
+      ],
+      color: "bg-gray-50 border-gray-200",
+      iconColor: "text-gray-600",
     },
   ]
 
@@ -207,14 +369,15 @@ export default function HomePage() {
                 <div className="space-y-4">
                   <Badge className="bg-red-100 text-red-800 border-red-200 text-sm hover:bg-red-200 hover:text-red-800">الرائدون في مجال السلامة</Badge>
                   <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                    حماية شاملة
+                    حماية شاملة ومتطورة
                     <span className="text-red-600"> لمنشأتك</span>
                     <br />
-                    من مخاطر الحريق
+                    من جميع مخاطر الحريق
                   </h1>
                   <p className="text-base sm:text-lg lg:text-xl text-gray-600 leading-relaxed">
-                    نوفر أحدث أنظمة الإنذار المبكر وخدمات الصيانة المتخصصة لضمان سلامة الأرواح والممتلكات بأعلى معايير
-                    الجودة والكفاءة في جميع أنحاء المملكة العربية السعودية. نخدم جميع القطاعات من المستودعات والمصانع إلى المجمعات السكنية والمراكز التجارية
+                    نوفر أحدث وأكثر أنظمة الإنذار المبكر تطوراً وخدمات الصيانة المتخصصة والمتقدمة لضمان سلامة الأرواح والممتلكات بأعلى معايير
+                    الجودة والكفاءة في جميع أنحاء المملكة العربية السعودية. نخدم جميع القطاعات والمنشآت من المستودعات والمصانع والمراكز الصناعية 
+                    إلى المجمعات السكنية والمراكز التجارية والمؤسسات التعليمية والحكومية والمراكز الطبية والمطارات والموانئ.
                   </p>
                   <div className="flex flex-wrap gap-2 pt-2">
                     <Badge variant="outline" className="bg-white text-gray-700 border-gray-300">أنظمة الإنذار المبكر</Badge>
@@ -284,10 +447,12 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 lg:mb-16">
             <Badge className="bg-[#897c71]/10 text-[#897c71] border-[#897c71]/20 mb-4 hover:bg-[#897c71]/20 hover:text-[#897c71]">من نحن</Badge>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 lg:mb-6">رواد السلامة في المملكة العربية السعودية</h2>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 lg:mb-6">الشركة الرائدة في مجال السلامة ومكافحة الحريق في المملكة العربية السعودية</h2>
             <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed px-4">
-              شركة رائدة في مجال خدمات السلامة ومكافحة الحريق، نقدم حلولاً متكاملة ومبتكرة لحماية المنشآت والأرواح في
-              جميع أنحاء المملكة العربية السعودية. نحن نعتبر أنفسنا شركاء استراتيجيين في حماية الأرواح والممتلكات
+              نحن شركة رائدة ومتخصصة في مجال خدمات السلامة ومكافحة الحريق، نقدم حلولاً متكاملة ومبتكرة ومتطورة لحماية المنشآت والأرواح 
+              في جميع أنحاء المملكة العربية السعودية. نعتبر أنفسنا شركاء استراتيجيين في حماية الأرواح والممتلكات، ونلتزم بتقديم أعلى معايير 
+              الجودة والكفاءة في جميع خدماتنا. خبرتنا الممتدة لأكثر من 15 عاماً في مجال السلامة تجعلنا الخيار الأمثل لجميع احتياجاتكم 
+              في مجال أنظمة الإطفاء والإنذار المبكر والخدمات المتخصصة.
             </p>
           </div>
 
@@ -408,10 +573,12 @@ export default function HomePage() {
       <section id="services-details" className="py-16 lg:py-20 bg-gradient-to-br from-gray-50 to-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 lg:mb-16">
-            <Badge className="bg-red-100 text-red-800 border-red-200 mb-4 hover:bg-red-200 hover:text-red-800">خدماتنا المتخصصة</Badge>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 lg:mb-6">حلول شاملة لجميع احتياجات السلامة</h2>
-            <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto px-4">
-              نقدم مجموعة متكاملة من الخدمات المتخصصة في مجال السلامة ومكافحة الحريق، مصممة خصيصاً لتلبية احتياجات جميع أنواع المنشآت
+            <Badge className="bg-red-100 text-red-800 border-red-200 mb-4 hover:bg-red-200 hover:text-red-800">خدماتنا المتخصصة والمتقدمة</Badge>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 lg:mb-6">حلول متكاملة ومتطورة لجميع احتياجات السلامة ومكافحة الحريق</h2>
+            <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto px-4 leading-relaxed">
+              نقدم مجموعة شاملة ومتطورة من الخدمات المتخصصة في مجال السلامة ومكافحة الحريق، مصممة خصيصاً لتلبية احتياجات جميع أنواع المنشآت والقطاعات. 
+              نستخدم أحدث التقنيات العالمية وأعلى معايير الجودة لضمان حماية شاملة للأرواح والممتلكات. خبرتنا الممتدة لأكثر من 15 عاماً في مجال السلامة 
+              تجعلنا الخيار الأمثل لجميع احتياجاتكم في مجال أنظمة الإطفاء والإنذار المبكر والخدمات المتخصصة.
             </p>
           </div>
 
@@ -748,8 +915,365 @@ export default function HomePage() {
               </CardContent>
             </Card>
           </div>
-</div>
-</section>
+
+          {/* Additional Specialized Services Section */}
+          <div className="mt-16 lg:mt-20">
+            <div className="text-center mb-12 lg:mb-16">
+              <Badge className="bg-purple-100 text-purple-800 border-purple-200 mb-4 hover:bg-purple-200 hover:text-purple-800">خدماتنا المتخصصة والمتقدمة</Badge>
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 lg:mb-6">حلول متطورة ومتخصصة للمنشآت الحساسة</h3>
+              <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto px-4 leading-relaxed">
+                نقدم مجموعة متطورة ومتخصصة من الخدمات المصممة خصيصاً للمنشآت الحساسة والصناعية، مع استخدام أحدث التقنيات العالمية 
+                وأعلى معايير الجودة والسلامة. خبرتنا الممتدة في مختلف القطاعات تجعلنا قادرين على تقديم حلول مخصصة ومتطورة 
+                تناسب احتياجات كل منشأة على حدة.
+              </p>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
+              {/* Advanced Fire Suppression Systems */}
+              <Card className="border-0 shadow-2xl bg-gradient-to-br from-purple-50 to-purple-100 hover:shadow-3xl transition-all duration-500">
+                <CardHeader className="pb-6">
+                  <div className="flex items-center space-x-4 space-x-reverse mb-4">
+                    <div className="bg-purple-600 p-4 rounded-2xl shadow-lg">
+                      <Shield className="h-8 w-8 text-white" />
+                    </div>
+                    <div>
+                      <CardTitle className="text-2xl lg:text-3xl text-gray-900">أنظمة الإطفاء المتطورة والمتخصصة</CardTitle>
+                      <CardDescription className="text-lg text-gray-600 mt-2">
+                        حلول إطفاء متطورة ومتخصصة للمنشآت الحساسة والصناعية
+                      </CardDescription>
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div className="bg-white p-4 rounded-xl shadow-sm">
+                      <div className="flex items-center space-x-3 space-x-reverse mb-3">
+                        <div className="bg-purple-100 p-2 rounded-lg">
+                          <CheckCircle className="h-5 w-5 text-purple-600" />
+                        </div>
+                        <h4 className="font-bold text-gray-900">أنظمة إطفاء المطابخ المتطورة</h4>
+                      </div>
+                      <p className="text-gray-600 text-sm">أنظمة متخصصة للمطابخ التجارية والفنادق</p>
+                    </div>
+                    <div className="bg-white p-4 rounded-xl shadow-sm">
+                      <div className="flex items-center space-x-3 space-x-reverse mb-3">
+                        <div className="bg-purple-100 p-2 rounded-lg">
+                          <CheckCircle className="h-5 w-5 text-purple-600" />
+                        </div>
+                        <h4 className="font-bold text-gray-900">أنظمة إطفاء CO2</h4>
+                      </div>
+                      <p className="text-gray-600 text-sm">للمراكز الحساسة والمعدات الإلكترونية</p>
+                    </div>
+                    <div className="bg-white p-4 rounded-xl shadow-sm">
+                      <div className="flex items-center space-x-3 space-x-reverse mb-3">
+                        <div className="bg-purple-100 p-2 rounded-lg">
+                          <CheckCircle className="h-5 w-5 text-purple-600" />
+                        </div>
+                        <h4 className="font-bold text-gray-900">أنظمة إطفاء FM-200</h4>
+                      </div>
+                      <p className="text-gray-600 text-sm">للمراكز الطبية والمختبرات</p>
+                    </div>
+                    <div className="bg-white p-4 rounded-xl shadow-sm">
+                      <div className="flex items-center space-x-3 space-x-reverse mb-3">
+                        <div className="bg-purple-100 p-2 rounded-lg">
+                          <CheckCircle className="h-5 w-5 text-purple-600" />
+                        </div>
+                        <h4 className="font-bold text-gray-900">أنظمة إطفاء الرغوة المتخصصة</h4>
+                      </div>
+                      <p className="text-gray-600 text-sm">للمستودعات النفطية والصناعية</p>
+                    </div>
+                  </div>
+                  <div className="bg-purple-600 text-white p-4 rounded-xl">
+                    <div className="flex items-center flex-col gap-4 justify-between">
+                      <div>
+                        <h4 className="font-bold text-lg">أنظمة متطورة ومتخصصة</h4>
+                        <p className="text-purple-100">لجميع أنواع المنشآت الحساسة</p>
+                      </div>
+                      <div className="flex space-x-2 space-x-reverse">
+                        <Button 
+                          className="bg-green-600 hover:bg-green-700 text-white border-0"
+                          onClick={() => window.open('https://wa.me/966555275651', '_blank')}
+                        >
+                          <MessageCircle className="h-4 w-4 ml-2" />
+                          واتساب
+                        </Button>
+                        <Button 
+                          variant="outline" 
+                          className="border-transparent bg-blue-500 text-white hover:bg-white hover:text-purple-600"
+                          onClick={() => window.open('tel:+966555275651', '_blank')}
+                        >
+                          <Phone className="h-4 w-4 ml-2" />
+                          اتصال
+                        </Button>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Emergency Systems */}
+              <Card className="border-0 shadow-2xl bg-gradient-to-br from-indigo-50 to-indigo-100 hover:shadow-3xl transition-all duration-500">
+                <CardHeader className="pb-6">
+                  <div className="flex items-center space-x-4 space-x-reverse mb-4">
+                    <div className="bg-indigo-600 p-4 rounded-2xl shadow-lg">
+                      <Building className="h-8 w-8 text-white" />
+                    </div>
+                    <div>
+                      <CardTitle className="text-2xl lg:text-3xl text-gray-900">أنظمة الطوارئ والسلامة</CardTitle>
+                      <CardDescription className="text-lg text-gray-600 mt-2">
+                        أنظمة طوارئ متطورة لضمان الإخلاء الآمن والسريع
+                      </CardDescription>
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div className="bg-white p-4 rounded-xl shadow-sm">
+                      <div className="flex items-center space-x-3 space-x-reverse mb-3">
+                        <div className="bg-indigo-100 p-2 rounded-lg">
+                          <CheckCircle className="h-5 w-5 text-indigo-600" />
+                        </div>
+                        <h4 className="font-bold text-gray-900">أبواب الطوارئ المتطورة</h4>
+                      </div>
+                      <p className="text-gray-600 text-sm">كهربائية وميكانيكية بجميع الأنواع</p>
+                    </div>
+                    <div className="bg-white p-4 rounded-xl shadow-sm">
+                      <div className="flex items-center space-x-3 space-x-reverse mb-3">
+                        <div className="bg-indigo-100 p-2 rounded-lg">
+                          <CheckCircle className="h-5 w-5 text-indigo-600" />
+                        </div>
+                        <h4 className="font-bold text-gray-900">سلالم الطوارئ المتخصصة</h4>
+                      </div>
+                      <p className="text-gray-600 text-sm">دوارة ومائلة للمباني العالية</p>
+                    </div>
+                    <div className="bg-white p-4 rounded-xl shadow-sm">
+                      <div className="flex items-center space-x-3 space-x-reverse mb-3">
+                        <div className="bg-indigo-100 p-2 rounded-lg">
+                          <CheckCircle className="h-5 w-5 text-indigo-600" />
+                        </div>
+                        <h4 className="font-bold text-gray-900">أنظمة إضاءة الطوارئ</h4>
+                      </div>
+                      <p className="text-gray-600 text-sm">إضاءة احتياطية للسلالم والأبواب</p>
+                    </div>
+                    <div className="bg-white p-4 rounded-xl shadow-sm">
+                      <div className="flex items-center space-x-3 space-x-reverse mb-3">
+                        <div className="bg-indigo-100 p-2 rounded-lg">
+                          <CheckCircle className="h-5 w-5 text-indigo-600" />
+                        </div>
+                        <h4 className="font-bold text-gray-900">أنظمة إشارات الطوارئ</h4>
+                      </div>
+                      <p className="text-gray-600 text-sm">إشارات ضوئية وصوتية للأبواب</p>
+                    </div>
+                  </div>
+                  <div className="bg-indigo-600 text-white p-4 rounded-xl">
+                    <div className="flex items-center flex-col gap-4 justify-between">
+                      <div>
+                        <h4 className="font-bold text-lg">أنظمة طوارئ متطورة</h4>
+                        <p className="text-indigo-100">لضمان الإخلاء الآمن والسريع</p>
+                      </div>
+                      <div className="flex space-x-2 space-x-reverse">
+                        <Button 
+                          className="bg-green-600 hover:bg-green-700 text-white border-0"
+                          onClick={() => window.open('https://wa.me/966555275651', '_blank')}
+                        >
+                          <MessageCircle className="h-4 w-4 ml-2" />
+                          واتساب
+                        </Button>
+                        <Button 
+                          variant="outline" 
+                          className="border-transparent bg-blue-500 text-white hover:bg-white hover:text-indigo-600"
+                          onClick={() => window.open('tel:+966555275651', '_blank')}
+                        >
+                          <Phone className="h-4 w-4 ml-2" />
+                          اتصال
+                        </Button>
+                      </div>
+                    </div>
+                  </div>
+                                 </CardContent>
+               </Card>
+             </div>
+           </div>
+
+           {/* Engineering and Consulting Services */}
+           <div className="mt-16 lg:mt-20">
+             <div className="text-center mb-12 lg:mb-16">
+               <Badge className="bg-teal-100 text-teal-800 border-teal-200 mb-4 hover:bg-teal-200 hover:text-teal-800">الخدمات الاستشارية والهندسية</Badge>
+               <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 lg:mb-6">خدمات استشارية وهندسية متخصصة ومحترفة</h3>
+               <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto px-4 leading-relaxed">
+                 نقدم خدمات استشارية وهندسية متخصصة ومحترفة في مجال السلامة ومكافحة الحريق، تشمل إعداد التقارير الفنية 
+                 والهندسية الشاملة واعتماد مخططات السلامة واستخراج جميع الشهادات المطلوبة من الجهات الرسمية.
+               </p>
+             </div>
+
+             <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
+               {/* Safety Certificates and Approvals */}
+               <Card className="border-0 shadow-2xl bg-gradient-to-br from-teal-50 to-teal-100 hover:shadow-3xl transition-all duration-500">
+                 <CardHeader className="pb-6">
+                   <div className="flex items-center space-x-4 space-x-reverse mb-4">
+                     <div className="bg-teal-600 p-4 rounded-2xl shadow-lg">
+                       <FileCheck className="h-8 w-8 text-white" />
+                     </div>
+                     <div>
+                       <CardTitle className="text-2xl lg:text-3xl text-gray-900">شهادات السلامة واعتماد المخططات</CardTitle>
+                       <CardDescription className="text-lg text-gray-600 mt-2">
+                         خدمات شاملة لاستخراج جميع شهادات السلامة واعتماد المخططات
+                       </CardDescription>
+                     </div>
+                   </div>
+                 </CardHeader>
+                 <CardContent className="space-y-6">
+                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                     <div className="bg-white p-4 rounded-xl shadow-sm">
+                       <div className="flex items-center space-x-3 space-x-reverse mb-3">
+                         <div className="bg-teal-100 p-2 rounded-lg">
+                           <CheckCircle className="h-5 w-5 text-teal-600" />
+                         </div>
+                         <h4 className="font-bold text-gray-900">تقييم شامل للمنشأة</h4>
+                       </div>
+                       <p className="text-gray-600 text-sm">وفق اشتراطات الدفاع المدني</p>
+                     </div>
+                     <div className="bg-white p-4 rounded-xl shadow-sm">
+                       <div className="flex items-center space-x-3 space-x-reverse mb-3">
+                         <div className="bg-teal-100 p-2 rounded-lg">
+                           <CheckCircle className="h-5 w-5 text-teal-600" />
+                         </div>
+                         <h4 className="font-bold text-gray-900">إعداد مخططات السلامة</h4>
+                       </div>
+                       <p className="text-gray-600 text-sm">مخططات تفصيلية للمنشآت</p>
+                     </div>
+                     <div className="bg-white p-4 rounded-xl shadow-sm">
+                       <div className="flex items-center space-x-3 space-x-reverse mb-3">
+                         <div className="bg-teal-100 p-2 rounded-lg">
+                           <CheckCircle className="h-5 w-5 text-teal-600" />
+                         </div>
+                         <h4 className="font-bold text-gray-900">متابعة الجهات الرسمية</h4>
+                       </div>
+                       <p className="text-gray-600 text-sm">متابعة مع الدفاع المدني والبلديات</p>
+                     </div>
+                     <div className="bg-white p-4 rounded-xl shadow-sm">
+                       <div className="flex items-center space-x-3 space-x-reverse mb-3">
+                         <div className="bg-teal-100 p-2 rounded-lg">
+                           <CheckCircle className="h-5 w-5 text-teal-600" />
+                         </div>
+                         <h4 className="font-bold text-gray-900">تجديد الشهادات</h4>
+                       </div>
+                       <p className="text-gray-600 text-sm">قبل انتهاء صلاحيتها</p>
+                     </div>
+                   </div>
+                   <div className="bg-teal-600 text-white p-4 rounded-xl">
+                     <div className="flex items-center flex-col gap-4 justify-between">
+                       <div>
+                         <h4 className="font-bold text-lg">خدمات شاملة ومتخصصة</h4>
+                         <p className="text-teal-100">لجميع أنواع المنشآت والقطاعات</p>
+                       </div>
+                       <div className="flex space-x-2 space-x-reverse">
+                         <Button 
+                           className="bg-green-600 hover:bg-green-700 text-white border-0"
+                           onClick={() => window.open('https://wa.me/966555275651', '_blank')}
+                         >
+                           <MessageCircle className="h-4 w-4 ml-2" />
+                           واتساب
+                         </Button>
+                         <Button 
+                           variant="outline" 
+                           className="border-transparent bg-blue-500 text-white hover:bg-white hover:text-teal-600"
+                           onClick={() => window.open('tel:+966555275651', '_blank')}
+                         >
+                           <Phone className="h-4 w-4 ml-2" />
+                           اتصال
+                         </Button>
+                       </div>
+                     </div>
+                   </div>
+                 </CardContent>
+               </Card>
+
+               {/* Engineering Reports */}
+               <Card className="border-0 shadow-2xl bg-gradient-to-br from-gray-50 to-gray-100 hover:shadow-3xl transition-all duration-500">
+                 <CardHeader className="pb-6">
+                   <div className="flex items-center space-x-4 space-x-reverse mb-4">
+                     <div className="bg-gray-600 p-4 rounded-2xl shadow-lg">
+                       <Award className="h-8 w-8 text-white" />
+                     </div>
+                     <div>
+                       <CardTitle className="text-2xl lg:text-3xl text-gray-900">التقرير الفني الهندسي الشامل</CardTitle>
+                       <CardDescription className="text-lg text-gray-600 mt-2">
+                         تقارير فنية هندسية مفصلة ومحترفة مع توصيات تحسينية شاملة
+                       </CardDescription>
+                     </div>
+                   </div>
+                 </CardHeader>
+                 <CardContent className="space-y-6">
+                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                     <div className="bg-white p-4 rounded-xl shadow-sm">
+                       <div className="flex items-center space-x-3 space-x-reverse mb-3">
+                         <div className="bg-gray-100 p-2 rounded-lg">
+                           <CheckCircle className="h-5 w-5 text-gray-600" />
+                         </div>
+                         <h4 className="font-bold text-gray-900">تقييم شامل للأنظمة</h4>
+                       </div>
+                       <p className="text-gray-600 text-sm">جميع أنظمة السلامة الموجودة</p>
+                     </div>
+                     <div className="bg-white p-4 rounded-xl shadow-sm">
+                       <div className="flex items-center space-x-3 space-x-reverse mb-3">
+                         <div className="bg-gray-100 p-2 rounded-lg">
+                           <CheckCircle className="h-5 w-5 text-gray-600" />
+                         </div>
+                         <h4 className="font-bold text-gray-900">تحليل المخاطر</h4>
+                       </div>
+                       <p className="text-gray-600 text-sm">تحديد نقاط الضعف المحتملة</p>
+                     </div>
+                     <div className="bg-white p-4 rounded-xl shadow-sm">
+                       <div className="flex items-center space-x-3 space-x-reverse mb-3">
+                         <div className="bg-gray-100 p-2 rounded-lg">
+                           <CheckCircle className="h-5 w-5 text-gray-600" />
+                         </div>
+                         <h4 className="font-bold text-gray-900">توصيات تحسينية</h4>
+                       </div>
+                       <p className="text-gray-600 text-sm">شاملة لأنظمة السلامة</p>
+                     </div>
+                     <div className="bg-white p-4 rounded-xl shadow-sm">
+                       <div className="flex items-center space-x-3 space-x-reverse mb-3">
+                         <div className="bg-gray-100 p-2 rounded-lg">
+                           <CheckCircle className="h-5 w-5 text-gray-600" />
+                         </div>
+                         <h4 className="font-bold text-gray-900">تقارير معتمدة</h4>
+                       </div>
+                       <p className="text-gray-600 text-sm">للجهات الرسمية</p>
+                     </div>
+                   </div>
+                   <div className="bg-gray-600 text-white p-4 rounded-xl">
+                     <div className="flex items-center flex-col gap-4 justify-between">
+                       <div>
+                         <h4 className="font-bold text-lg">تقارير فنية محترفة</h4>
+                         <p className="text-gray-100">مع توصيات تحسينية شاملة</p>
+                       </div>
+                       <div className="flex space-x-2 space-x-reverse">
+                         <Button 
+                           className="bg-green-600 hover:bg-green-700 text-white border-0"
+                           onClick={() => window.open('https://wa.me/966555275651', '_blank')}
+                         >
+                           <MessageCircle className="h-4 w-4 ml-2" />
+                           واتساب
+                         </Button>
+                         <Button 
+                           variant="outline" 
+                           className="border-transparent bg-blue-500 text-white hover:bg-white hover:text-gray-600"
+                           onClick={() => window.open('tel:+966555275651', '_blank')}
+                         >
+                           <Phone className="h-4 w-4 ml-2" />
+                           اتصال
+                         </Button>
+                       </div>
+                     </div>
+                   </div>
+                 </CardContent>
+               </Card>
+             </div>
+           </div>
+        </div>
+      </section>
          {/* Enhanced Services */}
          <section id="services" className="py-16 lg:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
@@ -988,10 +1512,12 @@ export default function HomePage() {
       <section id="sectors" className="py-16 lg:py-20 bg-gradient-to-br from-[#897c71]/5 to-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 lg:mb-16">
-            <Badge className="bg-[#897c71]/10 text-[#897c71] border-[#897c71]/20 mb-4 hover:bg-[#897c71]/20 hover:text-[#897c71]">القطاعات التي نخدمها</Badge>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 lg:mb-6">حلول مخصصة لجميع القطاعات</h2>
-            <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto px-4">
-              نقدم خدمات السلامة ومكافحة الحريق لجميع أنواع المنشآت والقطاعات في المملكة العربية السعودية
+            <Badge className="bg-[#897c71]/10 text-[#897c71] border-[#897c71]/20 mb-4 hover:bg-[#897c71]/20 hover:text-[#897c71]">القطاعات والمنشآت التي نخدمها</Badge>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 lg:mb-6">حلول متخصصة ومتقدمة لجميع القطاعات والمنشآت</h2>
+            <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto px-4 leading-relaxed">
+              نقدم خدمات السلامة ومكافحة الحريق المتطورة والمتخصصة لجميع أنواع المنشآت والقطاعات في المملكة العربية السعودية. 
+              خبرتنا الممتدة في مختلف القطاعات تجعلنا قادرين على تقديم حلول مخصصة ومتطورة تناسب احتياجات كل قطاع وكل منشأة 
+              على حدة، مع ضمان أعلى معايير السلامة والجودة.
             </p>
           </div>
 
@@ -1207,10 +1733,12 @@ export default function HomePage() {
       <section id="projects" className="py-16 lg:py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 lg:mb-16">
-            <Badge className="bg-[#897c71]/10 text-[#897c71] border-[#897c71]/20 mb-4 hover:bg-[#897c71]/20 hover:text-[#897c71]">مشاريعنا المتميزة</Badge>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 lg:mb-6">شركاء النجاح في المملكة</h2>
-            <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto px-4">
-              نفخر بخدمة أكثر من 500 مشروع متنوع في جميع أنحاء المملكة العربية السعودية
+            <Badge className="bg-[#897c71]/10 text-[#897c71] border-[#897c71]/20 mb-4 hover:bg-[#897c71]/20 hover:text-[#897c71]">مشاريعنا المتميزة والمتنوعة</Badge>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 lg:mb-6">شركاء النجاح والثقة في المملكة العربية السعودية</h2>
+            <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto px-4 leading-relaxed">
+              نفخر بخدمة أكثر من 500 مشروع متنوع ومتخصص في جميع أنحاء المملكة العربية السعودية، حيث قمنا بتقديم حلول 
+              متطورة ومتخصصة لجميع أنواع المنشآت والقطاعات. خبرتنا الممتدة في مختلف المشاريع تجعلنا الخيار الأمثل 
+              لجميع احتياجات السلامة ومكافحة الحريق.
             </p>
           </div>
 
@@ -1237,14 +1765,14 @@ export default function HomePage() {
           {/* Enhanced Featured Clients */}
           <div className="bg-white rounded-2xl shadow-xl p-6 lg:p-8">
             <h3 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-6 lg:mb-8">عملاؤنا المميزون</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
-              {clients.slice(0, 9).map((client, index) => (
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-6">
+              {clients.slice(0, ).map((client, index) => (
                 <Card key={index} className="border border-gray-200 hover:border-red-300 transition-colors">
                   <CardContent className="p-4 lg:p-6">
                     <div className="flex items-start space-x-3 space-x-reverse">
-                      <div className="bg-red-50 p-2 rounded-lg">
+                      {/* <div className="bg-red-50 p-2 rounded-lg">
                         <Building className="h-4 w-4 lg:h-5 lg:w-5 text-red-600" />
-                      </div>
+                      </div> */}
                       <div className="flex-1">
                         <h4 className="font-bold text-gray-900 mb-1 text-sm lg:text-base">{client.name}</h4>
                         <p className="text-xs lg:text-sm text-gray-600 mb-2">{client.type}</p>
@@ -1303,10 +1831,12 @@ export default function HomePage() {
       <section id="contact" className="py-16 lg:py-20 bg-red-600">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 lg:mb-16">
-            <Badge className="bg-white text-red-600 mb-4">تواصل معنا الآن</Badge>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 lg:mb-6">نحن في خدمتك على مدار الساعة</h2>
-            <p className="text-base sm:text-lg lg:text-xl text-red-100 max-w-4xl mx-auto px-4">
-              فريقنا المتخصص جاهز لتقديم الاستشارة المجانية وخدمات الطوارئ في أي وقت. نقدم خدمات شاملة تشمل التصميم والتركيب والصيانة والتدريب لجميع أنواع المنشآت
+            <Badge className="bg-white text-red-600 mb-4">تواصل معنا الآن للحصول على استشارة مجانية</Badge>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 lg:mb-6">نحن في خدمتك على مدار الساعة لجميع احتياجات السلامة</h2>
+            <p className="text-base sm:text-lg lg:text-xl text-red-100 max-w-4xl mx-auto px-4 leading-relaxed">
+              فريقنا المتخصص والمحترف جاهز لتقديم الاستشارة المجانية وخدمات الطوارئ في أي وقت وعلى مدار الساعة. نقدم خدمات شاملة ومتطورة 
+              تشمل التصميم والتركيب والصيانة والتدريب لجميع أنواع المنشآت والقطاعات. خبرتنا الممتدة في مجال السلامة تجعلنا الخيار الأمثل 
+              لجميع احتياجاتكم في مجال أنظمة الإطفاء والإنذار المبكر والخدمات المتخصصة.
             </p>
             <div className="flex flex-wrap justify-center gap-2 mt-6">
               <Badge variant="outline" className="bg-white/10 text-white border-white/20">استشارة مجانية</Badge>
@@ -1457,8 +1987,10 @@ export default function HomePage() {
                   </div>
                 </div>
                 <p className="text-gray-300 leading-relaxed text-sm lg:text-base">
-                  الشركة الرائدة في مجال خدمات السلامة ومكافحة الحريق في المملكة العربية السعودية، نقدم حلولاً شاملة
-                  ومبتكرة لحماية الأرواح والممتلكات. نخدم جميع القطاعات من المستودعات والمصانع إلى المجمعات السكنية والمراكز التجارية.
+                  الشركة الرائدة والمتخصصة في مجال خدمات السلامة ومكافحة الحريق في المملكة العربية السعودية، نقدم حلولاً شاملة ومتطورة ومبتكرة 
+                  لحماية الأرواح والممتلكات. خبرتنا الممتدة لأكثر من 15 عاماً في مجال السلامة تجعلنا الخيار الأمثل لجميع احتياجاتكم. 
+                  نخدم جميع القطاعات والمنشآت من المستودعات والمصانع والمراكز الصناعية إلى المجمعات السكنية والمراكز التجارية والمؤسسات 
+                  التعليمية والحكومية والمراكز الطبية والمطارات والموانئ.
                 </p>
                 <div className="flex space-x-4 space-x-reverse">
                   <div 
