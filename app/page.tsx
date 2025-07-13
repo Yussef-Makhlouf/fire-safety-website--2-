@@ -272,12 +272,7 @@ export default function HomePage() {
     },
   ]
 
-  const stats = [
-    { number: "500+", label: "مشروع مكتمل", icon: Building },
-    { number: "15+", label: "سنة خبرة", icon: Award },
-    { number: "50+", label: "عميل راضي", icon: Users },
-    { number: "24/7", label: "دعم فني", icon: HeadphonesIcon },
-  ]
+ 
 
   const projectCategories = [
     { name: "مستودعات", count: 8, icon: Factory },
@@ -286,7 +281,9 @@ export default function HomePage() {
     { name: "مصانع", count: 3, icon: Settings },
     { name: "مدارس", count: 2, icon: Users },
     { name: "مراكز تجارية", count: 5, icon: MapPin },
+    
   ]
+
 
   const navigationItems = [
     { href: "#home", label: "الرئيسية" },
@@ -407,7 +404,7 @@ export default function HomePage() {
               </div>
 
               {/* Enhanced Stats */}
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 pt-6 lg:pt-8">
+              {/* <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 pt-6 lg:pt-8">
                 {stats.map((stat, index) => (
                   <div key={index} className="text-center">
                     <div className="bg-white p-3 sm:p-4 rounded-lg shadow-sm border">
@@ -417,7 +414,7 @@ export default function HomePage() {
                     </div>
                   </div>
                 ))}
-              </div>
+              </div> */}
             </div>
 
             <div className="relative order-first lg:order-last">
