@@ -206,7 +206,7 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                           <div className="space-y-6 lg:space-y-8">
                 <div className="space-y-4">
-                  <Badge className="bg-red-100 text-red-800 border-red-200 text-sm">الرائدون في مجال السلامة</Badge>
+                  <Badge className="bg-red-100 text-red-800 border-red-200 text-sm hover:bg-red-200 hover:text-red-800">الرائدون في مجال السلامة</Badge>
                   <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                     حماية شاملة
                     <span className="text-red-600"> لمنشأتك</span>
@@ -284,7 +284,7 @@ export default function HomePage() {
       <section id="about" className="py-16 lg:py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 lg:mb-16">
-            <Badge className="bg-blue-100 text-blue-800 border-blue-200 mb-4">من نحن</Badge>
+            <Badge className="bg-blue-100 text-blue-800 border-blue-200 mb-4 hover:bg-blue-200 hover:text-blue-800">من نحن</Badge>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 lg:mb-6">رواد السلامة في المملكة العربية السعودية</h2>
             <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed px-4">
               شركة رائدة في مجال خدمات السلامة ومكافحة الحريق، نقدم حلولاً متكاملة ومبتكرة لحماية المنشآت والأرواح في
@@ -409,7 +409,7 @@ export default function HomePage() {
       <section id="services" className="py-16 lg:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 lg:mb-16">
-            <Badge className="bg-red-100 text-red-800 border-red-200 mb-4">خدماتنا المتميزة</Badge>
+            <Badge className="bg-red-100 text-red-800 border-red-200 mb-4 hover:bg-red-200 hover:text-red-800">خدماتنا المتميزة</Badge>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 lg:mb-6">حلول شاملة لجميع احتياجات السلامة</h2>
             <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto px-4">
               نقدم مجموعة متكاملة من الخدمات المتخصصة في مجال السلامة ومكافحة الحريق، مصممة خصيصاً لتلبية احتياجات جميع أنواع المنشآت
@@ -559,7 +559,7 @@ export default function HomePage() {
       <section id="services-details" className="py-16 lg:py-20 bg-gradient-to-br from-gray-50 to-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 lg:mb-16">
-            <Badge className="bg-red-100 text-red-800 border-red-200 mb-4">خدماتنا المتخصصة</Badge>
+            <Badge className="bg-red-100 text-red-800 border-red-200 mb-4 hover:bg-red-200 hover:text-red-800">خدماتنا المتخصصة</Badge>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 lg:mb-6">حلول شاملة لجميع احتياجات السلامة</h2>
             <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto px-4">
               نقدم مجموعة متكاملة من الخدمات المتخصصة في مجال السلامة ومكافحة الحريق، مصممة خصيصاً لتلبية احتياجات جميع أنواع المنشآت
@@ -821,7 +821,7 @@ export default function HomePage() {
             <Card className="border-0 shadow-2xl bg-gradient-to-br from-green-50 to-green-100 hover:shadow-3xl transition-all duration-500">
               <CardHeader className="pb-6">
                 <div className="flex items-center space-x-4 space-x-reverse mb-4">
-                  <div className="bg-green-600 p-4 rounded-2xl shadow-lg">
+                  <div className="bg-[#514740] p-4 rounded-2xl shadow-lg">
                     <FileCheck className="h-8 w-8 text-white" />
                   </div>
                   <div>
@@ -953,7 +953,7 @@ export default function HomePage() {
       <section id="sectors" className="py-16 lg:py-20 bg-gradient-to-br from-blue-50 to-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 lg:mb-16">
-            <Badge className="bg-blue-100 text-blue-800 border-blue-200 mb-4">القطاعات التي نخدمها</Badge>
+            <Badge className="bg-blue-100 text-blue-800 border-blue-200 mb-4 hover:bg-blue-200 hover:text-blue-800">القطاعات التي نخدمها</Badge>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 lg:mb-6">حلول مخصصة لجميع القطاعات</h2>
             <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto px-4">
               نقدم خدمات السلامة ومكافحة الحريق لجميع أنواع المنشآت والقطاعات في المملكة العربية السعودية
@@ -1172,7 +1172,7 @@ export default function HomePage() {
       <section id="projects" className="py-16 lg:py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 lg:mb-16">
-            <Badge className="bg-blue-100 text-blue-800 border-blue-200 mb-4">مشاريعنا المتميزة</Badge>
+            <Badge className="bg-blue-100 text-blue-800 border-blue-200 mb-4 hover:bg-blue-200 hover:text-blue-800">مشاريعنا المتميزة</Badge>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 lg:mb-6">شركاء النجاح في المملكة</h2>
             <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto px-4">
               نفخر بخدمة أكثر من 500 مشروع متنوع في جميع أنحاء المملكة العربية السعودية
@@ -1231,7 +1231,7 @@ export default function HomePage() {
           </div>
 
           {/* Enhanced Project Success Metrics */}
-          <div className="mt-12 lg:mt-16 grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+          {/* <div className="mt-12 lg:mt-16 grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             <div className="text-center">
               <div className="bg-red-600 text-white p-4 lg:p-6 rounded-xl mb-4">
                 <Building className="h-6 w-6 lg:h-8 lg:w-8 mx-auto" />
@@ -1260,7 +1260,7 @@ export default function HomePage() {
               <div className="text-2xl lg:text-3xl font-bold text-gray-900 mb-2">100%</div>
               <p className="text-gray-600 text-sm lg:text-base">معدل رضا العملاء</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -1629,8 +1629,8 @@ export default function HomePage() {
                     </div>
                     <div>
                       <p className="font-medium text-sm lg:text-base">أرقام الهاتف</p>
-                      <p className="text-gray-300 text-xs lg:text-sm">+966555275651</p>
-                      <p className="text-gray-300 text-xs lg:text-sm">+966543011003</p>
+                      <p className="text-gray-300 text-xs lg:text-sm">0555275651</p> 
+                      <p className="text-gray-300 text-xs lg:text-sm">0543011003</p>
                     </div>
                   </div>
 
@@ -1743,15 +1743,7 @@ export default function HomePage() {
                 <p className="text-gray-400 text-xs lg:text-sm">© 2024 خدمات السلامة ومكافحة الحريق. جميع الحقوق محفوظة.</p>
               </div>
               <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6 space-x-reverse">
-                <a href="#" className="text-gray-400 hover:text-red-400 transition-colors text-xs lg:text-sm">
-                  سياسة الخصوصية
-                </a>
-                <a href="#" className="text-gray-400 hover:text-red-400 transition-colors text-xs lg:text-sm">
-                  شروط الاستخدام
-                </a>
-                <a href="#" className="text-gray-400 hover:text-red-400 transition-colors text-xs lg:text-sm">
-                  الأسئلة الشائعة
-                </a>
+         <span className="text-gray-400 text-xs lg:text-sm"> تم تصميم وتطوير من قبل <a href="https://goldenmoonads.com/" className="text-red-400">  شركة القمر الذهبي</a></span>
               </div>
               <div>
                 <p className="text-gray-400 text-xs lg:text-sm">صُمم بعناية لخدمة السلامة في المملكة العربية السعودية</p>
@@ -1762,7 +1754,7 @@ export default function HomePage() {
       </footer>
 
       {/* Floating Contact Buttons */}
-      <div className="fixed bottom-6 left-6 z-50 space-y-3">
+      <div className="fixed grid bottom-6 left-6 z-50 space-y-3">
         {/* WhatsApp Button */}
         <button
           onClick={() => window.open('https://wa.me/966555275651', '_blank')}
@@ -1783,7 +1775,7 @@ export default function HomePage() {
       </div>
 
       {/* Mobile Floating Button */}
-      <div className="fixed bottom-6 right-6 z-50 lg:hidden">
+      {/* <div className="fixed bottom-6 right-6 z-50 lg:hidden ">
         <button
           onClick={() => window.open('https://wa.me/966555275651', '_blank')}
           className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 flex items-center space-x-2 space-x-reverse"
@@ -1792,7 +1784,7 @@ export default function HomePage() {
           <MessageCircle className="h-5 w-5" />
           <span className="text-sm font-medium">واتساب</span>
         </button>
-      </div>
+      </div> */}
     </div>
   )
 }
