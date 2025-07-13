@@ -145,7 +145,7 @@ export default function HomePage() {
             {/* Logo */}
             <div className="flex items-center space-x-3 space-x-reverse">
           
-   <Image src="/logo.png" alt="logo" width={100} height={100}  className=" rounded-full border-2 border-red-600 p-2 w-16 h-16"/>
+   <Image src="/logo.png" alt="logo" width={100} height={100}  className=" rounded-full border-2 border-red-600  w-16 h-16"/>
             
               <div>
                 <span className="text-lg sm:text-xl font-bold text-gray-900">خدمات السلامة</span>
@@ -404,8 +404,354 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Enhanced Services */}
-      <section id="services" className="py-16 lg:py-20 bg-gray-50">
+      {/* Enhanced Services Details Section */}
+      <section id="services-details" className="py-16 lg:py-20 bg-gradient-to-br from-gray-50 to-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12 lg:mb-16">
+            <Badge className="bg-red-100 text-red-800 border-red-200 mb-4 hover:bg-red-200 hover:text-red-800">خدماتنا المتخصصة</Badge>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 lg:mb-6">حلول شاملة لجميع احتياجات السلامة</h2>
+            <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto px-4">
+              نقدم مجموعة متكاملة من الخدمات المتخصصة في مجال السلامة ومكافحة الحريق، مصممة خصيصاً لتلبية احتياجات جميع أنواع المنشآت
+            </p>
+          </div>
+
+          {/* Main Services Grid */}
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-16 lg:mb-20">
+            {/* Fire Alarm Systems */}
+            <Card className="border-0 shadow-2xl bg-gradient-to-br from-red-50 to-red-100 hover:shadow-3xl transition-all duration-500">
+              <CardHeader className="pb-6">
+                <div className="flex items-center space-x-4 space-x-reverse mb-4">
+                  <div className="bg-red-600 p-4 rounded-2xl shadow-lg">
+                    <Shield className="h-8 w-8 text-white" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-2xl lg:text-3xl text-gray-900">أنظمة الإنذار المبكر للحرائق</CardTitle>
+                    <CardDescription className="text-lg text-gray-600 mt-2">
+                      تقنيات متطورة للكشف المبكر عن الحرائق وحماية الأرواح والممتلكات
+                    </CardDescription>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="bg-white p-4 rounded-xl shadow-sm">
+                    <div className="flex items-center space-x-3 space-x-reverse mb-3">
+                      <div className="bg-red-100 p-2 rounded-lg">
+                        <CheckCircle className="h-5 w-5 text-red-600" />
+                      </div>
+                      <h4 className="font-bold text-gray-900">كاشفات دخان ذكية</h4>
+                    </div>
+                    <p className="text-gray-600 text-sm">تقنية الاستشعار المتقدم للكشف المبكر عن الدخان</p>
+                  </div>
+                  <div className="bg-white p-4 rounded-xl shadow-sm">
+                    <div className="flex items-center space-x-3 space-x-reverse mb-3">
+                      <div className="bg-red-100 p-2 rounded-lg">
+                        <CheckCircle className="h-5 w-5 text-red-600" />
+                      </div>
+                      <h4 className="font-bold text-gray-900">أنظمة إنذار صوتية</h4>
+                    </div>
+                    <p className="text-gray-600 text-sm">إنذارات عالية الوضوح مع إشارات بصرية</p>
+                  </div>
+                  <div className="bg-white p-4 rounded-xl shadow-sm">
+                    <div className="flex items-center space-x-3 space-x-reverse mb-3">
+                      <div className="bg-red-100 p-2 rounded-lg">
+                        <CheckCircle className="h-5 w-5 text-red-600" />
+                      </div>
+                      <h4 className="font-bold text-gray-900">لوحات تحكم مركزية</h4>
+                    </div>
+                    <p className="text-gray-600 text-sm">مراقبة مركزية متصلة بنظام الإنذار</p>
+                  </div>
+                  <div className="bg-white p-4 rounded-xl shadow-sm">
+                    <div className="flex items-center space-x-3 space-x-reverse mb-3">
+                      <div className="bg-red-100 p-2 rounded-lg">
+                        <CheckCircle className="h-5 w-5 text-red-600" />
+                      </div>
+                      <h4 className="font-bold text-gray-900">تغطية شاملة</h4>
+                    </div>
+                    <p className="text-gray-600 text-sm">حماية لجميع المساحات والزوايا</p>
+                  </div>
+                </div>
+                <div className="bg-red-600 text-white p-4 rounded-xl">
+                  <div className="flex items-center flex-col gap-4 justify-between">
+                    <div>
+                      <h4 className="font-bold text-lg">اختبارات دورية</h4>
+                      <p className="text-red-100">صيانة مستمرة وفحص دوري</p>
+                    </div>
+                    <div className="flex space-x-2 space-x-reverse">
+                      <Button 
+                        className="bg-green-600 hover:bg-green-700 text-white border-0"
+                        onClick={() => window.open('https://wa.me/966555275651', '_blank')}
+                      >
+                        <MessageCircle className="h-4 w-4 ml-2" />
+                        واتساب
+                      </Button>
+                      <Button 
+                        variant="outline" 
+                        className="border-transparent bg-blue-500 text-white hover:bg-white hover:text-red-600"
+                        onClick={() => window.open('tel:+966555275651', '_blank')}
+                      >
+                        <Phone className="h-4 w-4 ml-2" />
+                        اتصال
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Fire Extinguisher Maintenance */}
+            <Card className="border-0 shadow-2xl bg-gradient-to-br from-orange-50 to-orange-100 hover:shadow-3xl transition-all duration-500">
+              <CardHeader className="pb-6">
+                <div className="flex items-center space-x-4 space-x-reverse mb-4">
+                  <div className="bg-orange-600 p-4 rounded-2xl shadow-lg">
+                    <Wrench className="h-8 w-8 text-white" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-2xl lg:text-3xl text-gray-900">صيانة وفحص معدات الإطفاء</CardTitle>
+                    <CardDescription className="text-lg text-gray-600 mt-2">
+                      خدمات صيانة احترافية لضمان جاهزية المعدات في حالات الطوارئ
+                    </CardDescription>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="bg-white p-4 rounded-xl shadow-sm">
+                    <div className="flex items-center space-x-3 space-x-reverse mb-3">
+                      <div className="bg-orange-100 p-2 rounded-lg">
+                        <CheckCircle className="h-5 w-5 text-orange-600" />
+                      </div>
+                      <h4 className="font-bold text-gray-900">فحص طفايات الحريق</h4>
+                    </div>
+                    <p className="text-gray-600 text-sm">بودرة، CO2، رغوة - فحص شامل</p>
+                  </div>
+                  <div className="bg-white p-4 rounded-xl shadow-sm">
+                    <div className="flex items-center space-x-3 space-x-reverse mb-3">
+                      <div className="bg-orange-100 p-2 rounded-lg">
+                        <CheckCircle className="h-5 w-5 text-orange-600" />
+                      </div>
+                      <h4 className="font-bold text-gray-900">اختبار ضغط الخراطيم</h4>
+                    </div>
+                    <p className="text-gray-600 text-sm">فحص خراطيم المياه والصمامات</p>
+                  </div>
+                  <div className="bg-white p-4 rounded-xl shadow-sm">
+                    <div className="flex items-center space-x-3 space-x-reverse mb-3">
+                      <div className="bg-orange-100 p-2 rounded-lg">
+                        <CheckCircle className="h-5 w-5 text-orange-600" />
+                      </div>
+                      <h4 className="font-bold text-gray-900">صيانة الرش التلقائي</h4>
+                    </div>
+                    <p className="text-gray-600 text-sm">أنظمة الرش التلقائي والصيانة</p>
+                  </div>
+                  <div className="bg-white p-4 rounded-xl shadow-sm">
+                    <div className="flex items-center space-x-3 space-x-reverse mb-3">
+                      <div className="bg-orange-100 p-2 rounded-lg">
+                        <CheckCircle className="h-5 w-5 text-orange-600" />
+                      </div>
+                      <h4 className="font-bold text-gray-900">تقارير فنية معتمدة</h4>
+                    </div>
+                    <p className="text-gray-600 text-sm">شهادات صلاحية وتقارير مفصلة</p>
+                  </div>
+                </div>
+                <div className="bg-orange-600 text-white p-4 rounded-xl">
+                  <div className="flex items-center flex-col gap-4 justify-between">
+                    <div>
+                      <h4 className="font-bold text-lg">استبدال القطع التالفة</h4>
+                      <p className="text-orange-100">قطع أصلية مع ضمان الجودة</p>
+                    </div>
+                    <div className="flex space-x-2 space-x-reverse">
+                      <Button 
+                        className="bg-green-600 hover:bg-green-700 text-white border-0"
+                        onClick={() => window.open('https://wa.me/966555275651', '_blank')}
+                      >
+                        <MessageCircle className="h-4 w-4 ml-2" />
+                        واتساب
+                      </Button>
+                      <Button 
+                        variant="outline" 
+                        className="border-transparent bg-blue-500 text-white hover:bg-white hover:text-red-600"
+                        onClick={() => window.open('tel:+966555275651', '_blank')}
+                      >
+                        <Phone className="h-4 w-4 ml-2" />
+                        اتصال
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Additional Services Grid */}
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
+            {/* Maintenance Contracts */}
+            <Card className="border-0 shadow-2xl bg-gradient-to-br from-[#897c71]/5 to-[#897c71]/10 hover:shadow-3xl transition-all duration-500">
+              <CardHeader className="pb-6">
+                <div className="flex items-center space-x-4 space-x-reverse mb-4">
+                  <div className="bg-[#897c71] p-4 rounded-2xl shadow-lg">
+                    <Clock className="h-8 w-8 text-white" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-2xl lg:text-3xl text-gray-900">عقود الصيانة الشاملة</CardTitle>
+                    <CardDescription className="text-lg text-gray-600 mt-2">
+                      برامج صيانة مخصصة لضمان استمرارية عمل أنظمة السلامة
+                    </CardDescription>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="bg-white p-4 rounded-xl shadow-sm">
+                    <div className="flex items-center space-x-3 space-x-reverse mb-3">
+                      <div className="bg-[#897c71]/10 p-2 rounded-lg">
+                        <CheckCircle className="h-5 w-5 text-[#897c71]" />
+                      </div>
+                      <h4 className="font-bold text-gray-900">صيانة وقائية مجدولة</h4>
+                    </div>
+                    <p className="text-gray-600 text-sm">حسب المعايير الدولية</p>
+                  </div>
+                  <div className="bg-white p-4 rounded-xl shadow-sm">
+                    <div className="flex items-center space-x-3 space-x-reverse mb-3">
+                      <div className="bg-[#897c71]/10 p-2 rounded-lg">
+                        <CheckCircle className="h-5 w-5 text-[#897c71]" />
+                      </div>
+                      <h4 className="font-bold text-gray-900">فريق طوارئ 24/7</h4>
+                    </div>
+                    <p className="text-gray-600 text-sm">متاح على مدار الساعة</p>
+                  </div>
+                  <div className="bg-white p-4 rounded-xl shadow-sm">
+                    <div className="flex items-center space-x-3 space-x-reverse mb-3">
+                      <div className="bg-[#897c71]/10 p-2 rounded-lg">
+                        <CheckCircle className="h-5 w-5 text-[#897c71]" />
+                      </div>
+                      <h4 className="font-bold text-gray-900">تحديث الأنظمة القديمة</h4>
+                    </div>
+                    <p className="text-gray-600 text-sm">ترقية للتقنيات الحديثة</p>
+                  </div>
+                  <div className="bg-white p-4 rounded-xl shadow-sm">
+                    <div className="flex items-center space-x-3 space-x-reverse mb-3">
+                      <div className="bg-[#897c71]/10 p-2 rounded-lg">
+                        <CheckCircle className="h-5 w-5 text-[#897c71]" />
+                      </div>
+                      <h4 className="font-bold text-gray-900">تدريب الموظفين</h4>
+                    </div>
+                    <p className="text-gray-600 text-sm">تدريب على الاستخدام الصحيح</p>
+                  </div>
+                </div>
+                <div className="bg-[#897c71] text-white p-4 rounded-xl">
+                  <div className="flex items-center flex-col gap-4 justify-between">
+                    <div>
+                      <h4 className="font-bold text-lg">تقارير شهرية مفصلة</h4>
+                      <p className="text-white">متابعة مستمرة وحالة الأنظمة</p>
+                    </div>
+                    <div className="flex space-x-2 space-x-reverse">
+                      <Button 
+                        className="bg-green-600 hover:bg-green-700 text-white border-0"
+                        onClick={() => window.open('https://wa.me/966555275651', '_blank')}
+                      >
+                        <MessageCircle className="h-4 w-4 ml-2" />
+                        واتساب
+                      </Button>
+                      <Button 
+                        variant="outline" 
+                        className="border-white bg-[#897c71]/80 text-white hover:bg-white hover:text-[#897c71]"
+                        onClick={() => window.open('tel:+966555275651', '_blank')}
+                      >
+                        <Phone className="h-4 w-4 ml-2" />
+                        اتصال
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Safety Certificates */}
+            <Card className="border-0 shadow-2xl bg-gradient-to-br from-green-50 to-green-100 hover:shadow-3xl transition-all duration-500">
+              <CardHeader className="pb-6">
+                <div className="flex items-center space-x-4 space-x-reverse mb-4">
+                  <div className="bg-[#514740] p-4 rounded-2xl shadow-lg">
+                    <FileCheck className="h-8 w-8 text-white" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-2xl lg:text-3xl text-gray-900">استخراج شهادات السلامة</CardTitle>
+                    <CardDescription className="text-lg text-gray-600 mt-2">
+                      مساعدة شاملة للحصول على جميع التراخيص والشهادات المطلوبة
+                    </CardDescription>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="bg-white p-4 rounded-xl shadow-sm">
+                    <div className="flex items-center space-x-3 space-x-reverse mb-3">
+                      <div className="bg-green-100 p-2 rounded-lg">
+                        <CheckCircle className="h-5 w-5 text-green-600" />
+                      </div>
+                      <h4 className="font-bold text-gray-900">تقييم شامل</h4>
+                    </div>
+                    <p className="text-gray-600 text-sm">وفق اشتراطات الدفاع المدني</p>
+                  </div>
+                  <div className="bg-white p-4 rounded-xl shadow-sm">
+                    <div className="flex items-center space-x-3 space-x-reverse mb-3">
+                      <div className="bg-green-100 p-2 rounded-lg">
+                        <CheckCircle className="h-5 w-5 text-green-600" />
+                      </div>
+                      <h4 className="font-bold text-gray-900">إعداد الوثائق</h4>
+                    </div>
+                    <p className="text-gray-600 text-sm">المستندات والمتابعة الرسمية</p>
+                  </div>
+                  <div className="bg-white p-4 rounded-xl shadow-sm">
+                    <div className="flex items-center space-x-3 space-x-reverse mb-3">
+                      <div className="bg-green-100 p-2 rounded-lg">
+                        <CheckCircle className="h-5 w-5 text-green-600" />
+                      </div>
+                      <h4 className="font-bold text-gray-900">متابعة الجهات الرسمية</h4>
+                    </div>
+                    <p className="text-gray-600 text-sm">متابعة مع الدفاع المدني</p>
+                  </div>
+                  <div className="bg-white p-4 rounded-xl shadow-sm">
+                    <div className="flex items-center space-x-3 space-x-reverse mb-3">
+                      <div className="bg-green-100 p-2 rounded-lg">
+                        <CheckCircle className="h-5 w-5 text-green-600" />
+                      </div>
+                      <h4 className="font-bold text-gray-900">تنبيهات انتهاء الصلاحية</h4>
+                    </div>
+                    <p className="text-gray-600 text-sm">تذكير بالتجديد في الوقت المناسب</p>
+                  </div>
+                </div>
+                <div className="bg-green-600 text-white p-4 rounded-xl">
+                  <div className="flex items-center flex-col gap-4 justify-between">
+                    <div >
+                      <h4 className="font-bold text-lg">خدمات التجديد السريع</h4>
+                      <p className="text-green-100">تجديد سريع وفعال</p>
+                    </div>
+                    <div className="flex space-x-2 space-x-reverse">
+                      <Button 
+                        className="bg-green-600 border-2 border-white hover:bg-green-700 text-white "
+                        onClick={() => window.open('https://wa.me/966555275651', '_blank')}
+                      >
+                        <MessageCircle className="h-4 w-4 ml-2" />
+                        واتساب
+                      </Button>
+                      <Button 
+                        variant="outline" 
+                        className="border-transparent text-white bg-blue-500 hover:bg-white hover:text-green-600"
+                        onClick={() => window.open('tel:+966555275651', '_blank')}
+                      >
+                        <Phone className="h-4 w-4 ml-2" />
+                        اتصال
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+</div>
+</section>
+         {/* Enhanced Services */}
+         <section id="services" className="py-16 lg:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 lg:mb-16">
             <Badge className="bg-red-100 text-red-800 border-red-200 mb-4 hover:bg-red-200 hover:text-red-800">معرض مشاريعنا</Badge>
@@ -638,7 +984,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* Enhanced Sectors Section */}
       <section id="sectors" className="py-16 lg:py-20 bg-gradient-to-br from-[#897c71]/5 to-white">
         <div className="container mx-auto px-4">
@@ -954,9 +1299,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Enhanced Special Clients Section */}
-   
-
       {/* Enhanced Contact Section */}
       <section id="contact" className="py-16 lg:py-20 bg-red-600">
         <div className="container mx-auto px-4">
@@ -1051,7 +1393,7 @@ export default function HomePage() {
                 <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-4">مكتبنا الرئيسي</h3>
                 <div className="space-y-3 text-right">
                   <div className="bg-[#897c71]/5 p-3 lg:p-4 rounded-lg">
-                    <p className="font-bold text-gray-900 text-sm lg:text-base">الرياض</p>
+                    <p className="font-bold text-gray-900 text-sm lg:text-base"> الرياض - الفيحاء - ابن ماجة</p>
                     <p className="text-xs lg:text-sm text-gray-600">المملكة العربية السعودية</p>
                   </div>
                   <div className="bg-gray-50 p-3 rounded-lg">
@@ -1093,62 +1435,12 @@ export default function HomePage() {
           </div>
 
           {/* Enhanced Social Media Section */}
-          <div className="mt-12 lg:mt-16 text-center flex flex-col items-center justify-center">
-            <h3 className="text-2xl sm:text-3xl font-bold text-white mb-6 lg:mb-8">تابعنا على وسائل التواصل الاجتماعي</h3>
-            <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 space-x-reverse" dir="ltr">
-              <Button 
-                size="lg" 
-                className="bg-white text-red-600 hover:bg-gray-100 px-6 lg:px-8 py-3 lg:py-4 text-sm lg:text-base"
-                onClick={() => window.open('https://www.instagram.com/fire.fighting.basics?igsh=MXFsajEzOG4zajlmZg==', '_blank')}
-              >
-                <Instagram className="h-5 w-5 lg:h-6 lg:w-6 ml-2" />
-                إنستغرام
-              </Button>
          
-              <Button 
-                size="lg" 
-                className="bg-white text-red-600 hover:bg-gray-100 px-6 lg:px-8 py-3 lg:py-4 text-sm lg:text-base"
-                onClick={() => window.open('https://x.com/fire_fight_bas', '_blank')}
-              >
-                <Twitter className="h-5 w-5 lg:h-6 lg:w-6 ml-2" />
-                تويتر
-              </Button>
-              <Button 
-                size="lg" 
-                className="bg-white text-red-600 hover:bg-gray-100 px-6 lg:px-8 py-3 lg:py-4 text-sm lg:text-base"
-                onClick={() => window.open('https://www.facebook.com/profile.php?id=61578185585083', '_blank')}
-              >
-                <Facebook className="h-5 w-5 lg:h-6 lg:w-6 ml-2" />
-                فيسبوك
-              </Button>
-              <Button 
-                size="lg" 
-                className="bg-white text-red-600 hover:bg-gray-100 px-6 lg:px-8 py-3 lg:py-4 text-sm lg:text-base"
-                onClick={() => window.open('https://www.tiktok.com/@fire.fighting.basics?lang=ar', '_blank')}
-              >
-                <svg className="h-5 w-5 lg:h-6 lg:w-6 ml-2" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-.88-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
-                </svg>
-                تيك توك
-              </Button>
-              <Button 
-                size="lg" 
-                className="bg-white text-red-600 hover:bg-gray-100 px-6 lg:px-8 py-3 lg:py-4 text-sm lg:text-base"
-                onClick={() => window.open('https://www.snapchat.com/add/firefightbas?share_id=DR1GAX_SMJA&locale=ar-EG', '_blank')}
-              >
-                {/* Snapchat SVG icon */}
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                  <path d="M5.829 4.533c-.6 1.344-.363 3.752-.267 5.436-.648.359-1.48-.271-1.951-.271-.49 0-1.075.322-1.167.802-.066.346.089.85 1.201 1.289.43.17 1.453.37 1.69.928.333.784-1.71 4.403-4.918 4.931-.251.041-.43.265-.416.519.056.975 2.242 1.357 3.211 1.507.099.134.179.7.306 1.131.057.193.204.424.582.424.493 0 1.312-.38 2.738-.144 1.398.233 2.712 2.215 5.235 2.215 2.345 0 3.744-1.991 5.09-2.215.779-.129 1.448-.088 2.196.058.515.101.977.157 1.124-.349.129-.437.208-.992.305-1.123.96-.149 3.156-.53 3.211-1.505.014-.254-.165-.477-.416-.519-3.154-.52-5.259-4.128-4.918-4.931.236-.557 1.252-.755 1.69-.928.814-.321 1.222-.716 1.213-1.173-.011-.585-.715-.934-1.233-.934-.527 0-1.284.624-1.897.286.096-1.698.332-4.095-.267-5.438-1.135-2.543-3.66-3.829-6.184-3.829-2.508 0-5.014 1.268-6.158 3.833z" fill="#dc2626"/>
-                </svg>
-                سناب شات
-              </Button>
-            </div>
-          </div>
         </div>
       </section>
 
       {/* Enhanced Footer */}
-      <footer className="bg-gray-900 text-white">
+      <footer className="bg-gray-900 text-white ">
         <div className="container mx-auto px-4">
           {/* Main Footer Content */}
           <div className="py-12 lg:py-16">
@@ -1415,34 +1707,121 @@ export default function HomePage() {
               <h4 className="text-xl lg:text-2xl font-bold mb-3 lg:mb-4">شهاداتنا واعتماداتنا</h4>
               <p className="text-gray-400 text-sm lg:text-base">معتمدون من أفضل الجهات المحلية والعالمية</p>
             </div>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-              <div className="text-center">
-                <div className="bg-gray-800 p-4 lg:p-6 rounded-lg mb-3 lg:mb-4">
-                  <Award className="h-8 w-8 lg:h-12 lg:w-12 text-red-400 mx-auto" />
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+              {/* رخصة مزاولة النشاط */}
+              <div className="text-center group">
+                <div 
+                  className="bg-gray-800 p-4 lg:p-6 rounded-lg mb-3 lg:mb-4 hover:bg-gray-700 transition-all duration-300 cursor-pointer transform hover:scale-105"
+                  onClick={() => window.open('/documents/active_licens.pdf', '_blank')}
+                >
+                  <div className="bg-red-600 w-12 h-12 lg:w-16 lg:h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <FileCheck className="h-6 w-6 lg:h-8 lg:w-8 text-white" />
+                  </div>
+                  <p className="text-white font-medium text-sm lg:text-base">رخصة مزاولة النشاط</p>
+                  <p className="text-gray-400 text-xs lg:text-sm">معتمدون رسمياً</p>
                 </div>
-                <p className="font-medium text-sm lg:text-base">الدفاع المدني السعودي</p>
-                <p className="text-xs lg:text-sm text-gray-400">معتمدون رسمياً</p>
+                <div className="flex justify-center space-x-2 space-x-reverse">
+                  <Button 
+                    size="sm"
+                    variant="outline"
+                    className="border-red-600 text-red-400 hover:bg-red-600 hover:text-white text-xs"
+                    onClick={() => window.open('/documents/active_licens.pdf', '_blank')}
+                  >
+                    <FileCheck className="h-3 w-3 ml-1" />
+                    عرض الشهادة
+                  </Button>
+                </div>
               </div>
-              <div className="text-center">
-                <div className="bg-gray-800 p-4 lg:p-6 rounded-lg mb-3 lg:mb-4">
-                  <Shield className="h-8 w-8 lg:h-12 lg:w-12 text-[#897c71] mx-auto" />
+
+              {/* رخصة تجارية */}
+              <div className="text-center group">
+                <div 
+                  className="bg-gray-800 p-4 lg:p-6 rounded-lg mb-3 lg:mb-4 hover:bg-gray-700 transition-all duration-300 cursor-pointer transform hover:scale-105"
+                  onClick={() => window.open('/documents/trade_license.pdf', '_blank')}
+                >
+                  <div className="bg-blue-600 w-12 h-12 lg:w-16 lg:h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <Award className="h-6 w-6 lg:h-8 lg:w-8 text-white" />
+                  </div>
+                  <p className="text-white font-medium text-sm lg:text-base">رخصة تجارية</p>
+                  <p className="text-gray-400 text-xs lg:text-sm">مرخصة رسمياً</p>
                 </div>
-                <p className="font-medium text-sm lg:text-base">ISO 9001:2015</p>
-                <p className="text-xs lg:text-sm text-gray-400">إدارة الجودة</p>
+                <div className="flex justify-center space-x-2 space-x-reverse">
+                  <Button 
+                    size="sm"
+                    variant="outline"
+                    className="border-blue-600 text-blue-400 hover:bg-blue-600 hover:text-white text-xs"
+                    onClick={() => window.open('/documents/trade_license.pdf', '_blank')}
+                  >
+                    <FileCheck className="h-3 w-3 ml-1" />
+                    عرض الشهادة
+                  </Button>
+                </div>
               </div>
-              <div className="text-center">
-                <div className="bg-gray-800 p-4 lg:p-6 rounded-lg mb-3 lg:mb-4">
-                  <CheckCircle className="h-8 w-8 lg:h-12 lg:w-12 text-green-400 mx-auto" />
+
+              {/* رخصة ضريبية */}
+              <div className="text-center group">
+                <div 
+                  className="bg-gray-800 p-4 lg:p-6 rounded-lg mb-3 lg:mb-4 hover:bg-gray-700 transition-all duration-300 cursor-pointer transform hover:scale-105"
+                  onClick={() => window.open('/documents/tax_licens.pdf', '_blank')}
+                >
+                  <div className="bg-green-600 w-12 h-12 lg:w-16 lg:h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <Shield className="h-6 w-6 lg:h-8 lg:w-8 text-white" />
+                  </div>
+                  <p className="text-white font-medium text-sm lg:text-base">رخصة ضريبية</p>
+                  <p className="text-gray-400 text-xs lg:text-sm">مطابقة المعايير</p>
                 </div>
-                <p className="font-medium text-sm lg:text-base">SASO</p>
-                <p className="text-xs lg:text-sm text-gray-400">مطابقة المعايير</p>
+                <div className="flex justify-center space-x-2 space-x-reverse">
+                  <Button 
+                    size="sm"
+                    variant="outline"
+                    className="border-green-600 text-green-400 hover:bg-green-600 hover:text-white text-xs"
+                    onClick={() => window.open('/documents/tax_licens.pdf', '_blank')}
+                  >
+                    <FileCheck className="h-3 w-3 ml-1" />
+                    عرض الشهادة
+                  </Button>
+                </div>
               </div>
-              <div className="text-center">
-                <div className="bg-gray-800 p-4 lg:p-6 rounded-lg mb-3 lg:mb-4">
-                  <Users className="h-8 w-8 lg:h-12 lg:w-12 text-orange-400 mx-auto" />
+
+              {/* علامة تجارية */}
+              <div className="text-center group">
+                <div 
+                  className="bg-gray-800 p-4 lg:p-6 rounded-lg mb-3 lg:mb-4 hover:bg-gray-700 transition-all duration-300 cursor-pointer transform hover:scale-105"
+                  onClick={() => window.open('/documents/trade_mark.pdf', '_blank')}
+                >
+                  <div className="bg-orange-600 w-12 h-12 lg:w-16 lg:h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <Star className="h-6 w-6 lg:h-8 lg:w-8 text-white" />
+                  </div>
+                  <p className="text-white font-medium text-sm lg:text-base">علامة تجارية</p>
+                  <p className="text-gray-400 text-xs lg:text-sm">مسجلة رسمياً</p>
                 </div>
-                <p className="font-medium text-sm lg:text-base">OSHA</p>
-                <p className="text-xs lg:text-sm text-gray-400">السلامة المهنية</p>
+                <div className="flex justify-center space-x-2 space-x-reverse">
+                  <Button 
+                    size="sm"
+                    variant="outline"
+                    className="border-orange-600 text-orange-400 hover:bg-orange-600 hover:text-white text-xs"
+                    onClick={() => window.open('/documents/trade_mark.pdf', '_blank')}
+                  >
+                    <FileCheck className="h-3 w-3 ml-1" />
+                    عرض الشهادة
+                  </Button>
+                </div>
+              </div>
+            </div>
+
+            {/* Additional Info */}
+            <div className="mt-8 lg:mt-12 text-center">
+              <div className="bg-gray-800 p-4 lg:p-6 rounded-lg max-w-2xl mx-auto">
+                <h5 className="text-lg lg:text-xl font-bold text-white mb-3">جميع شهاداتنا معتمدة رسمياً</h5>
+                <p className="text-gray-300 text-sm lg:text-base mb-4">
+                  نحن معتمدون من جميع الجهات الرسمية في المملكة العربية السعودية، ويمكنكم الاطلاع على جميع شهاداتنا وتراخيصنا الرسمية
+                </p>
+                <div className="flex flex-wrap justify-center gap-2">
+                  <Badge variant="outline" className="bg-red-600/10 text-red-400 border-red-600/30">معتمد من الدفاع المدني</Badge>
+                  <Badge variant="outline" className="bg-blue-600/10 text-blue-400 border-blue-600/30">رخصة تجارية سارية</Badge>
+                  <Badge variant="outline" className="bg-green-600/10 text-green-400 border-green-600/30">مطابق للمعايير الضريبية</Badge>
+                  <Badge variant="outline" className="bg-orange-600/10 text-orange-400 border-orange-600/30">علامة تجارية مسجلة</Badge>
+                </div>
               </div>
             </div>
           </div>
@@ -1485,7 +1864,7 @@ export default function HomePage() {
           <div className="py-6 lg:py-8 border-t border-gray-800">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-6 text-center sm:text-right">
               <div>
-                <p className="text-gray-400 text-xs lg:text-sm">© 2024 خدمات السلامة ومكافحة الحريق. جميع الحقوق محفوظة.</p>
+                <p className="text-gray-400 text-xs lg:text-sm" dir="ltr">© 2025 خدمات السلامة ومكافحة الحريق. جميع الحقوق محفوظة.</p>
               </div>
               <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6 space-x-reverse">
          <span className="text-gray-400 text-xs lg:text-sm"> تم تصميم وتطوير من قبل <a href="https://fashne.net/" className="text-red-400">  شركة الفشني للتسويق الالكتروني</a></span>
@@ -1518,18 +1897,7 @@ export default function HomePage() {
           <Phone className="h-6 w-6" />
         </button>
       </div>
-
-      {/* Mobile Floating Button */}
-      {/* <div className="fixed bottom-6 right-6 z-50 lg:hidden ">
-        <button
-          onClick={() => window.open('https://wa.me/966555275651', '_blank')}
-          className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 flex items-center space-x-2 space-x-reverse"
-          title="تواصل معنا عبر الواتساب"
-        >
-          <MessageCircle className="h-5 w-5" />
-          <span className="text-sm font-medium">واتساب</span>
-        </button>
-      </div> */}
+ 
     </div>
   )
 }
