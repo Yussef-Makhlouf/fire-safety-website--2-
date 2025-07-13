@@ -496,7 +496,7 @@ export default function HomePage() {
 
             <div className="relative order-first lg:order-last">
               <div className="bg-white p-4 lg:p-6 rounded-2xl shadow-xl">
-                <img src="/placeholder.svg?height=400&width=500" alt="فريق العمل" className="rounded-lg w-full h-auto" />
+                <img src="/serv7.avif" alt="فريق العمل" className="rounded-lg w-full h-auto" />
               </div>
               <div className="absolute top-4 left-4 lg:top-6 lg:left-6 bg-white p-3 lg:p-4 rounded-lg shadow-lg">
                 <div className="flex items-center space-x-2 space-x-reverse">
