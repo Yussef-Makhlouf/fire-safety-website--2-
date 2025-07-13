@@ -288,7 +288,7 @@ export default function HomePage() {
   const navigationItems = [
     { href: "#home", label: "الرئيسية" },
     { href: "#about", label: "من نحن" },
-    { href: "#services", label: "خدماتنا" },
+    { href: "#services-visualization", label: "خدماتنا" },
     { href: "#services-details", label: "تفاصيل الخدمات" },
     { href: "#sectors", label: "القطاعات" },
     { href: "#projects", label: "مشاريعنا" },
@@ -403,18 +403,7 @@ export default function HomePage() {
                 </Button>
               </div>
 
-              {/* Enhanced Stats */}
-              {/* <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 pt-6 lg:pt-8">
-                {stats.map((stat, index) => (
-                  <div key={index} className="text-center">
-                    <div className="bg-white p-3 sm:p-4 rounded-lg shadow-sm border">
-                      <stat.icon className="h-5 w-5 sm:h-6 sm:w-6 text-red-600 mx-auto mb-2" />
-                      <div className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900">{stat.number}</div>
-                      <p className="text-xs sm:text-sm text-gray-600">{stat.label}</p>
-                    </div>
-                  </div>
-                ))}
-              </div> */}
+ 
             </div>
 
             <div className="relative order-first lg:order-last">
@@ -1271,8 +1260,389 @@ export default function HomePage() {
            </div>
         </div>
       </section>
-         {/* Enhanced Services */}
-         <section id="services" className="py-16 lg:py-20 bg-gray-50">
+               {/* Modern Services Visualization */}
+      <section id="services-visualization" className="py-16 lg:py-20 bg-gradient-to-br from-gray-50 to-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12 lg:mb-16">
+            <Badge className="bg-red-100 text-red-800 border-red-200 mb-4 hover:bg-red-200 hover:text-red-800">خدماتنا المتطورة</Badge>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 lg:mb-6">حلول متطورة ومتخصصة لجميع احتياجات السلامة</h2>
+            <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto px-4 leading-relaxed">
+              نقدم مجموعة شاملة ومتطورة من الخدمات المتخصصة في مجال السلامة ومكافحة الحريق، مصممة خصيصاً لتلبية احتياجات جميع أنواع المنشآت والقطاعات. 
+              نستخدم أحدث التقنيات العالمية وأعلى معايير الجودة لضمان حماية شاملة للأرواح والممتلكات.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            {/* Service 1 - Fire Alarm Systems */}
+            <div className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 bg-white">
+              <div className="relative overflow-hidden">
+                <img
+                  src="/serv1.avif"
+                  alt="أنظمة الإنذار المبكر للحرائق"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute top-4 right-4">
+                  {/* <div className="bg-red-600 text-white p-3 rounded-xl shadow-lg">
+                    <Shield className="h-6 w-6" />
+                  </div> */}
+                </div>
+              </div>
+              <div className="p-6 lg:p-8">
+                <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-3">أنظمة الإنذار المبكر للحرائق</h3>
+                <p className="text-gray-600 mb-4 leading-relaxed">
+                  تقنيات متطورة للكشف المبكر عن الحرائق مع كاشفات دخان ذكية وأنظمة إنذار صوتية ومرئية عالية الوضوح
+                </p>
+                <div className="space-y-2 mb-4">
+                  <div className="flex items-center space-x-2 space-x-reverse">
+                    <CheckCircle className="h-4 w-4 text-green-600" />
+                    <span className="text-sm text-gray-700">كاشفات دخان ذكية</span>
+                  </div>
+                  <div className="flex items-center space-x-2 space-x-reverse">
+                    <CheckCircle className="h-4 w-4 text-green-600" />
+                    <span className="text-sm text-gray-700">أنظمة إنذار صوتية</span>
+                  </div>
+                  <div className="flex items-center space-x-2 space-x-reverse">
+                    <CheckCircle className="h-4 w-4 text-green-600" />
+                    <span className="text-sm text-gray-700">لوحات تحكم مركزية</span>
+                  </div>
+                </div>
+                <div className="flex space-x-2 space-x-reverse">
+                  <Button 
+                    size="sm"
+                    className="bg-red-600 hover:bg-red-700 text-white"
+                    onClick={() => window.open('https://wa.me/966555275651', '_blank')}
+                  >
+                    <MessageCircle className="h-4 w-4 ml-2" />
+                    استشارة مجانية
+                  </Button>
+                  <Button 
+                    size="sm"
+                    variant="outline"
+                    className="border-red-600 text-red-600 hover:bg-red-50"
+                    onClick={() => window.open('tel:+966555275651', '_blank')}
+                  >
+                    <Phone className="h-4 w-4 ml-2" />
+                    اتصال
+                  </Button>
+                </div>
+              </div>
+            </div>
+
+            {/* Service 2 - Fire Extinguisher Maintenance */}
+            <div className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 bg-white">
+              <div className="relative overflow-hidden">
+                <img
+                  src="/serv2.avif"
+                  alt="صيانة وفحص معدات الإطفاء"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute top-4 right-4">
+                  {/* <div className="bg-orange-600 text-white p-3 rounded-xl shadow-lg">
+                    <Wrench className="h-6 w-6" />
+                  </div> */}
+                </div>
+              </div>
+              <div className="p-6 lg:p-8">
+                <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-3">صيانة وفحص معدات الإطفاء</h3>
+                <p className="text-gray-600 mb-4 leading-relaxed">
+                  خدمات صيانة احترافية شاملة لجميع أنواع طفايات الحريق مع تعبئة دورية وفحص شامل لضمان الجاهزية التامة
+                </p>
+                <div className="space-y-2 mb-4">
+                  <div className="flex items-center space-x-2 space-x-reverse">
+                    <CheckCircle className="h-4 w-4 text-green-600" />
+                    <span className="text-sm text-gray-700">فحص طفايات الحريق</span>
+                  </div>
+                  <div className="flex items-center space-x-2 space-x-reverse">
+                    <CheckCircle className="h-4 w-4 text-green-600" />
+                    <span className="text-sm text-gray-700">اختبار ضغط الخراطيم</span>
+                  </div>
+                  <div className="flex items-center space-x-2 space-x-reverse">
+                    <CheckCircle className="h-4 w-4 text-green-600" />
+                    <span className="text-sm text-gray-700">تقارير فنية معتمدة</span>
+                  </div>
+                </div>
+                <div className="flex space-x-2 space-x-reverse">
+                  <Button 
+                    size="sm"
+                    className="bg-orange-600 hover:bg-orange-700 text-white"
+                    onClick={() => window.open('https://wa.me/966555275651', '_blank')}
+                  >
+                    <MessageCircle className="h-4 w-4 ml-2" />
+                    استشارة مجانية
+                  </Button>
+                  <Button 
+                    size="sm"
+                    variant="outline"
+                    className="border-orange-600 text-orange-600 hover:bg-orange-50"
+                    onClick={() => window.open('tel:+966555275651', '_blank')}
+                  >
+                    <Phone className="h-4 w-4 ml-2" />
+                    اتصال
+                  </Button>
+                </div>
+              </div>
+            </div>
+
+            {/* Service 3 - Maintenance Contracts */}
+            <div className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 bg-white">
+              <div className="relative overflow-hidden">
+                <img
+                  src="/serv3.avif"
+                  alt="عقود الصيانة الشاملة"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute top-4 right-4">
+                  {/* <div className="bg-[#897c71] text-white p-3 rounded-xl shadow-lg">
+                    <Clock className="h-6 w-6" />
+                  </div> */}
+                </div>
+              </div>
+              <div className="p-6 lg:p-8">
+                <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-3">عقود الصيانة الشاملة</h3>
+                <p className="text-gray-600 mb-4 leading-relaxed">
+                  برامج صيانة مخصصة لضمان استمرارية عمل أنظمة السلامة مع فريق طوارئ متاح على مدار الساعة
+                </p>
+                <div className="space-y-2 mb-4">
+                  <div className="flex items-center space-x-2 space-x-reverse">
+                    <CheckCircle className="h-4 w-4 text-green-600" />
+                    <span className="text-sm text-gray-700">صيانة وقائية مجدولة</span>
+                  </div>
+                  <div className="flex items-center space-x-2 space-x-reverse">
+                    <CheckCircle className="h-4 w-4 text-green-600" />
+                    <span className="text-sm text-gray-700">فريق طوارئ 24/7</span>
+                  </div>
+                  <div className="flex items-center space-x-2 space-x-reverse">
+                    <CheckCircle className="h-4 w-4 text-green-600" />
+                    <span className="text-sm text-gray-700">تقارير شهرية مفصلة</span>
+                  </div>
+                </div>
+                <div className="flex space-x-2 space-x-reverse">
+                  <Button 
+                    size="sm"
+                    className="bg-[#897c71] hover:bg-[#897c71]/80 text-white"
+                    onClick={() => window.open('https://wa.me/966555275651', '_blank')}
+                  >
+                    <MessageCircle className="h-4 w-4 ml-2" />
+                    استشارة مجانية
+                  </Button>
+                  <Button 
+                    size="sm"
+                    variant="outline"
+                    className="border-[#897c71] text-[#897c71] hover:bg-[#897c71]/10"
+                    onClick={() => window.open('tel:+966555275651', '_blank')}
+                  >
+                    <Phone className="h-4 w-4 ml-2" />
+                    اتصال
+                  </Button>
+                </div>
+              </div>
+            </div>
+
+            {/* Service 4 - Safety Certificates */}
+            <div className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 bg-white">
+              <div className="relative overflow-hidden">
+                <img
+                  src="/serv4.avif"
+                  alt="استخراج شهادات السلامة"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute top-4 right-4">
+                  {/* <div className="bg-green-600 text-white p-3 rounded-xl shadow-lg">
+                    <FileCheck className="h-6 w-6" />
+                  </div> */}
+                </div>
+              </div>
+              <div className="p-6 lg:p-8">
+                <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-3">استخراج شهادات السلامة</h3>
+                <p className="text-gray-600 mb-4 leading-relaxed">
+                  خدمات شاملة لاستخراج جميع شهادات السلامة المطلوبة واعتماد مخططات السلامة من الجهات الرسمية
+                </p>
+                <div className="space-y-2 mb-4">
+                  <div className="flex items-center space-x-2 space-x-reverse">
+                    <CheckCircle className="h-4 w-4 text-green-600" />
+                    <span className="text-sm text-gray-700">تقييم شامل للمنشأة</span>
+                  </div>
+                  <div className="flex items-center space-x-2 space-x-reverse">
+                    <CheckCircle className="h-4 w-4 text-green-600" />
+                    <span className="text-sm text-gray-700">إعداد الوثائق الرسمية</span>
+                  </div>
+                  <div className="flex items-center space-x-2 space-x-reverse">
+                    <CheckCircle className="h-4 w-4 text-green-600" />
+                    <span className="text-sm text-gray-700">متابعة الجهات الرسمية</span>
+                  </div>
+                </div>
+                <div className="flex space-x-2 space-x-reverse">
+                  <Button 
+                    size="sm"
+                    className="bg-green-600 hover:bg-green-700 text-white"
+                    onClick={() => window.open('https://wa.me/966555275651', '_blank')}
+                  >
+                    <MessageCircle className="h-4 w-4 ml-2" />
+                    استشارة مجانية
+                  </Button>
+                  <Button 
+                    size="sm"
+                    variant="outline"
+                    className="border-green-600 text-green-600 hover:bg-green-50"
+                    onClick={() => window.open('tel:+966555275651', '_blank')}
+                  >
+                    <Phone className="h-4 w-4 ml-2" />
+                    اتصال
+                  </Button>
+                </div>
+              </div>
+            </div>
+
+            {/* Service 5 - Advanced Fire Suppression */}
+            <div className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 bg-white">
+              <div className="relative overflow-hidden">
+                <img
+                  src="/serv5.avif"
+                  alt="أنظمة الإطفاء المتطورة"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute top-4 right-4">
+                  {/* <div className="bg-purple-600 text-white p-3 rounded-xl shadow-lg">
+                    <Shield className="h-6 w-6" />
+                  </div> */}
+                </div>
+              </div>
+              <div className="p-6 lg:p-8">
+                <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-3">أنظمة الإطفاء المتطورة</h3>
+                <p className="text-gray-600 mb-4 leading-relaxed">
+                  حلول إطفاء متطورة ومتخصصة للمنشآت الحساسة والصناعية مع أحدث التقنيات العالمية
+                </p>
+                <div className="space-y-2 mb-4">
+                  <div className="flex items-center space-x-2 space-x-reverse">
+                    <CheckCircle className="h-4 w-4 text-orange-600" />
+                    <span className="text-sm text-gray-700">أنظمة إطفاء المطابخ</span>
+                  </div>
+                  <div className="flex items-center space-x-2 space-x-reverse">
+                    <CheckCircle className="h-4 w-4 text-orange-600" />
+                    <span className="text-sm text-gray-700">أنظمة إطفاء CO2</span>
+                  </div>
+                  <div className="flex items-center space-x-2 space-x-reverse">
+                    <CheckCircle className="h-4 w-4 text-orange-600" />
+                    <span className="text-sm text-gray-700">أنظمة إطفاء الرغوة</span>
+                  </div>
+                </div>
+                <div className="flex space-x-2 space-x-reverse">
+                  <Button 
+                    size="sm"
+                    className="bg-purple-600 hover:bg-purple-700 text-white"
+                    onClick={() => window.open('https://wa.me/966555275651', '_blank')}
+                  >
+                    <MessageCircle className="h-4 w-4 ml-2" />
+                    استشارة مجانية
+                  </Button>
+                  <Button 
+                    size="sm"
+                    variant="outline"
+                    className="border-purple-600 text-purple-600 hover:bg-purple-50"
+                    onClick={() => window.open('tel:+966555275651', '_blank')}
+                  >
+                    <Phone className="h-4 w-4 ml-2" />
+                    اتصال
+                  </Button>
+                </div>
+              </div>
+            </div>
+
+            {/* Service 6 - Emergency Systems */}
+            <div className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 bg-white">
+              <div className="relative overflow-hidden">
+                <img
+                  src="/serv6.avif"
+                  alt="أنظمة الطوارئ والسلامة"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute top-4 right-4">
+                  {/* <div className="bg-indigo-600 text-white p-3 rounded-xl shadow-lg">
+                    <Building className="h-6 w-6" />
+                  </div> */}
+                </div>
+              </div>
+              <div className="p-6 lg:p-8">
+                <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-3">أنظمة الطوارئ والسلامة</h3>
+                <p className="text-gray-600 mb-4 leading-relaxed">
+                  أنظمة طوارئ متطورة لضمان الإخلاء الآمن والسريع مع أبواب طوارئ وسلالم احتياطية متخصصة
+                </p>
+                <div className="space-y-2 mb-4">
+                  <div className="flex items-center space-x-2 space-x-reverse">
+                    <CheckCircle className="h-4 w-4 text-orange-600" />
+                    <span className="text-sm text-gray-700">أبواب الطوارئ المتطورة</span>
+                  </div>
+                  <div className="flex items-center space-x-2 space-x-reverse">
+                    <CheckCircle className="h-4 w-4 text-orange-600" />
+                    <span className="text-sm text-gray-700">سلالم الطوارئ المتخصصة</span>
+                  </div>
+                  <div className="flex items-center space-x-2 space-x-reverse">
+                    <CheckCircle className="h-4 w-4 text-orange-600" />
+                    <span className="text-sm text-gray-700">أنظمة إضاءة الطوارئ</span>
+                  </div>
+                </div>
+                <div className="flex space-x-2 space-x-reverse">
+                  <Button 
+                    size="sm"
+                    className="bg-orange-600 hover:bg-orange-700 text-white"
+                    onClick={() => window.open('https://wa.me/966555275651', '_blank')}
+                  >
+                    <MessageCircle className="h-4 w-4 ml-2" />
+                    استشارة مجانية
+                  </Button>
+                  <Button 
+                    size="sm"
+                    variant="outline"
+                    className="border-orange-600 text-orange-600 hover:bg-orange-50"
+                    onClick={() => window.open('tel:+966555275651', '_blank')}
+                  >
+                    <Phone className="h-4 w-4 ml-2" />
+                    اتصال
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Call to Action */}
+          <div className="mt-12 lg:mt-16 text-center">
+            <div className="bg-gradient-to-r from-red-600 to-red-700 rounded-2xl p-8 lg:p-12 text-white">
+              <h3 className="text-2xl lg:text-3xl font-bold mb-4">هل تحتاج إلى استشارة مجانية؟</h3>
+              <p className="text-red-100 mb-6 lg:mb-8 text-lg">
+                فريقنا المتخصص جاهز لتقديم الاستشارة المجانية ومساعدتك في اختيار أفضل الحلول لمنشأتك
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button 
+                  size="lg"
+                  className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-lg"
+                  onClick={() => window.open('https://wa.me/966555275651', '_blank')}
+                >
+                  <MessageCircle className="h-5 w-5 ml-2" />
+                  استشارة مجانية عبر الواتساب
+                </Button>
+                <Button 
+                  size="lg"
+                  variant="outline"
+                  className="border-white text-black hover:bg-white hover:text-red-600 px-8 py-4 text-lg"
+                  onClick={() => window.open('tel:+966555275651', '_blank')}
+                >
+                  <Phone className="h-5 w-5 ml-2" />
+                  اتصال مباشر
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Enhanced Services */}
+      <section id="services" className="py-16 lg:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 lg:mb-16">
             <Badge className="bg-red-100 text-red-800 border-red-200 mb-4 hover:bg-red-200 hover:text-red-800">معرض مشاريعنا</Badge>
