@@ -28,6 +28,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { useState } from "react"
+import Image from "next/image"
 
 export default function HomePage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -144,9 +145,9 @@ export default function HomePage() {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center space-x-3 space-x-reverse">
-              <div className="bg-red-600 p-2 rounded-lg">
-                <Shield className="h-6 w-6 text-white" />
-              </div>
+          
+   <Image src="/logo.png" alt="logo" width={100} height={100}  className=" rounded-full border-2 border-red-600 p-2 w-16 h-16"/>
+            
               <div>
                 <span className="text-lg sm:text-xl font-bold text-gray-900">خدمات السلامة</span>
                 <p className="text-xs sm:text-sm text-gray-600">ومكافحة الحريق</p>
@@ -622,7 +623,7 @@ export default function HomePage() {
                   </div>
                 </div>
                 <div className="bg-red-600 text-white p-4 rounded-xl">
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center flex-col gap-4 justify-between">
                     <div>
                       <h4 className="font-bold text-lg">اختبارات دورية</h4>
                       <p className="text-red-100">صيانة مستمرة وفحص دوري</p>
@@ -637,7 +638,7 @@ export default function HomePage() {
                       </Button>
                       <Button 
                         variant="outline" 
-                        className="border-white text-white hover:bg-white hover:text-red-600"
+                        className="border-transparent bg-blue-500 text-white hover:bg-white hover:text-red-600"
                         onClick={() => window.open('tel:+966555275651', '_blank')}
                       >
                         <Phone className="h-4 w-4 ml-2" />
@@ -704,7 +705,7 @@ export default function HomePage() {
                   </div>
                 </div>
                 <div className="bg-orange-600 text-white p-4 rounded-xl">
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center flex-col gap-4 justify-between">
                     <div>
                       <h4 className="font-bold text-lg">استبدال القطع التالفة</h4>
                       <p className="text-orange-100">قطع أصلية مع ضمان الجودة</p>
@@ -719,7 +720,7 @@ export default function HomePage() {
                       </Button>
                       <Button 
                         variant="outline" 
-                        className="border-white text-white hover:bg-white hover:text-orange-600"
+                        className="border-transparent bg-blue-500 text-white hover:bg-white hover:text-red-600"
                         onClick={() => window.open('tel:+966555275651', '_blank')}
                       >
                         <Phone className="h-4 w-4 ml-2" />
@@ -789,7 +790,7 @@ export default function HomePage() {
                   </div>
                 </div>
                 <div className="bg-blue-600 text-white p-4 rounded-xl">
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center flex-col gap-4 justify-between">
                     <div>
                       <h4 className="font-bold text-lg">تقارير شهرية مفصلة</h4>
                       <p className="text-blue-100">متابعة مستمرة وحالة الأنظمة</p>
@@ -804,7 +805,7 @@ export default function HomePage() {
                       </Button>
                       <Button 
                         variant="outline" 
-                        className="border-white text-white hover:bg-white hover:text-blue-600"
+                        className="border-transparent bg-blue-500 text-white hover:bg-white hover:text-red-600"
                         onClick={() => window.open('tel:+966555275651', '_blank')}
                       >
                         <Phone className="h-4 w-4 ml-2" />
@@ -871,8 +872,8 @@ export default function HomePage() {
                   </div>
                 </div>
                 <div className="bg-green-600 text-white p-4 rounded-xl">
-                  <div className="flex items-center justify-between">
-                    <div>
+                  <div className="flex items-center flex-col gap-4 justify-between">
+                    <div >
                       <h4 className="font-bold text-lg">خدمات التجديد السريع</h4>
                       <p className="text-green-100">تجديد سريع وفعال</p>
                     </div>
@@ -886,7 +887,7 @@ export default function HomePage() {
                       </Button>
                       <Button 
                         variant="outline" 
-                        className="border-white text-white hover:bg-white hover:text-green-600"
+                        className="border-transparent text-white bg-blue-500 hover:bg-white hover:text-green-600"
                         onClick={() => window.open('tel:+966555275651', '_blank')}
                       >
                         <Phone className="h-4 w-4 ml-2" />
@@ -900,9 +901,9 @@ export default function HomePage() {
           </div>
 
           {/* Service Process Flow */}
-          <div className="mt-16 lg:mt-20 bg-white rounded-3xl shadow-2xl p-8 lg:p-12">
+          <div className="mt-16 lg:mt-20 bg-white rounded-3xl shadow-2xl p-8 lg:p-12 ">
             <h3 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-8 lg:mb-12">كيف نعمل معك؟</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
               <div className="text-center group">
                 <div className="bg-gradient-to-br from-red-500 to-red-600 text-white w-16 h-16 lg:w-20 lg:h-20 rounded-full flex items-center justify-center mx-auto mb-6 text-xl lg:text-2xl font-bold shadow-lg group-hover:scale-110 transition-transform duration-300">
                   1
