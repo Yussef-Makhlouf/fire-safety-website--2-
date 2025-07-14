@@ -1731,7 +1731,7 @@ export default function HomePage() {
             {/* مشروع 6 */}
             <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
               <img
-                src="/pro6.jpg"
+                src="/fire.webp"
                 alt="مشروع 6"
                 className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
               />
