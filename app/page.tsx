@@ -58,6 +58,8 @@ export default function HomePage() {
     { name: "مؤسسة مبارك الصفر لمقاولات العامة", type: "معارض", location: "البطحاء الرياض" },
     { name: "شركة حياة السعودية", type: "مصنع حدادة", location: "السلي الرياض" },
     { name: "شركة التنمية الغذائية", type: "مكتب صرافة", location: "المدينة المنورة" },
+    { name: "مصنع حدادة", type: "مصنع", location: "الرياض" },
+
     { name: "مؤسسة محمد صبري للصرافة", type: "مكتب صرافة", location: "مكة" },
     { name: "شركة زاد الازدهار", type: "تموينات", location: "الرياض" },
     { name: "مكتب أحمد المحاماة", type: "مكتب محاماة", location: "الرياض" },
@@ -73,12 +75,13 @@ export default function HomePage() {
     { name: "شركة النور لتنظيم المعارض والمؤتمرات", type: "معارض", location: "الرياض" },
     { name: "شركة خدمات البلدية المحدودة", type: "معارض", location: "الرياض" },
     { name: "مطعم", type: "مطعم", location: "الرياض" },
-    { name: "معرض", type: "معرض", location: "الرياض" },
-    { name: "معرض", type: "معرض", location: "الرياض" },
-    { name: "معرض", type: "معرض", location: "الرياض" },
+
     { name: "محل جودانو مول للورود", type: "معرض", location: "الرياض" },
     { name: "محل السلام مول", type: "معرض", location: "الرياض" },
     { name: "محل ماكس للعطور السلام مول", type: "معرض", location: "الرياض" },
+    { name: "مراكز صيانة السيارات", type: "مركز صيانه", location: "الرياض" },
+    { name: "مصنع خرسانة", type: "مصنع", location: "الرياض" },
+
   ]
 
   const services = [
@@ -1922,6 +1925,44 @@ export default function HomePage() {
                 </div> */}
               </CardContent>
             </Card>
+            <Card className="border-0 shadow-xl bg-white hover:shadow-2xl transition-all duration-300">
+              <CardHeader className="pb-4">
+                <div className="flex items-center space-x-4 space-x-reverse mb-4">
+                  <div className="bg-red-600 p-3 rounded-xl shadow-lg">
+                    <Factory className="h-6 w-6 text-white" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-xl lg:text-2xl text-gray-900">مراكز صيانة السيارات</CardTitle>
+                    <CardDescription className="text-gray-600">حماية شاملة لورش الصيانة والمراكز التقنية</CardDescription>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-3 space-x-reverse">
+                    <CheckCircle className="h-4 w-4 text-green-600" />
+                    <span className="text-gray-700 text-sm">أنظمة إنذار للكشف عن الحرائق في مناطق العمل</span>
+                  </div>
+                  <div className="flex items-center space-x-3 space-x-reverse">
+                    <CheckCircle className="h-4 w-4 text-green-600" />
+                    <span className="text-gray-700 text-sm">حماية خاصة لخزانات الوقود والزيوت</span>
+                  </div>
+                  <div className="flex items-center space-x-3 space-x-reverse">
+                    <CheckCircle className="h-4 w-4 text-green-600" />
+                    <span className="text-gray-700 text-sm">أنظمة إطفاء للمعدات الكهربائية والإلكترونية</span>
+                  </div>
+                  <div className="flex items-center space-x-3 space-x-reverse">
+                    <CheckCircle className="h-4 w-4 text-green-600" />
+                    <span className="text-gray-700 text-sm">معدات إطفاء متخصصة للحرائق الكيميائية</span>
+                  </div>
+                  <div className="flex items-center space-x-3 space-x-reverse">
+                    <CheckCircle className="h-4 w-4 text-green-600" />
+                    <span className="text-gray-700 text-sm">أنظمة تهوية للغازات السامة والأبخرة</span>
+                  </div>
+                </div>
+     
+              </CardContent>
+            </Card>
 
             {/* Residential Complexes */}
             <Card className="border-0 shadow-xl bg-white hover:shadow-2xl transition-all duration-300">
@@ -1954,6 +1995,88 @@ export default function HomePage() {
                 {/* <div className="bg-[#897c71]/5 p-3 rounded-lg">
                   <p className="text-[#897c71] font-medium text-sm">12+ مشروع مكتمل</p>
                 </div> */}
+              </CardContent>
+            </Card>
+            <Card className="border-0 shadow-xl bg-white hover:shadow-2xl transition-all duration-300">
+              <CardHeader className="pb-4">
+                <div className="flex items-center space-x-4 space-x-reverse mb-4">
+                  <div className="bg-red-600 p-3 rounded-xl shadow-lg">
+                    <Factory className="h-6 w-6 text-white" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-xl lg:text-2xl text-gray-900">مراكز صيانة السيارات</CardTitle>
+                    <CardDescription className="text-gray-600">حماية شاملة لورش الصيانة والمراكز التقنية</CardDescription>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-3 space-x-reverse">
+                    <CheckCircle className="h-4 w-4 text-green-600" />
+                    <span className="text-gray-700 text-sm">أنظمة إنذار للكشف عن الحرائق في مناطق العمل</span>
+                  </div>
+                  <div className="flex items-center space-x-3 space-x-reverse">
+                    <CheckCircle className="h-4 w-4 text-green-600" />
+                    <span className="text-gray-700 text-sm">حماية خاصة لخزانات الوقود والزيوت</span>
+                  </div>
+                  <div className="flex items-center space-x-3 space-x-reverse">
+                    <CheckCircle className="h-4 w-4 text-green-600" />
+                    <span className="text-gray-700 text-sm">أنظمة إطفاء للمعدات الكهربائية والإلكترونية</span>
+                  </div>
+                  <div className="flex items-center space-x-3 space-x-reverse">
+                    <CheckCircle className="h-4 w-4 text-green-600" />
+                    <span className="text-gray-700 text-sm">معدات إطفاء متخصصة للحرائق الكيميائية</span>
+                  </div>
+                  <div className="flex items-center space-x-3 space-x-reverse">
+                    <CheckCircle className="h-4 w-4 text-green-600" />
+                    <span className="text-gray-700 text-sm">أنظمة تهوية للغازات السامة والأبخرة</span>
+                  </div>
+                </div>
+     
+              </CardContent>
+            </Card>
+
+            {/* Concrete Factories */}
+            <Card className="border-0 shadow-xl bg-white hover:shadow-2xl transition-all duration-300">
+              <CardHeader className="pb-4">
+                <div className="flex items-center space-x-4 space-x-reverse mb-4">
+                  <div className="bg-gray-700 p-3 rounded-xl shadow-lg">
+                    <Factory className="h-6 w-6 text-white" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-xl lg:text-2xl text-gray-900">مصانع الخرسانة</CardTitle>
+                    <CardDescription className="text-gray-600">حماية شاملة لمصانع الخرسانة والمواد الإنشائية</CardDescription>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-3 space-x-reverse">
+                    <CheckCircle className="h-4 w-4 text-green-600" />
+                    <span className="text-gray-700 text-sm">أنظمة إنذار للكشف عن الحرائق في مناطق الخلط</span>
+                  </div>
+                  <div className="flex items-center space-x-3 space-x-reverse">
+                    <CheckCircle className="h-4 w-4 text-green-600" />
+                    <span className="text-gray-700 text-sm">حماية خاصة لخزانات الأسمنت والمواد الكيميائية</span>
+                  </div>
+                  <div className="flex items-center space-x-3 space-x-reverse">
+                    <CheckCircle className="h-4 w-4 text-green-600" />
+                    <span className="text-gray-700 text-sm">أنظمة إطفاء للمعدات الكهربائية والتحكم</span>
+                  </div>
+                  <div className="flex items-center space-x-3 space-x-reverse">
+                    <CheckCircle className="h-4 w-4 text-green-600" />
+                    <span className="text-gray-700 text-sm">معدات إطفاء متخصصة للحرائق الصناعية</span>
+                  </div>
+                  <div className="flex items-center space-x-3 space-x-reverse">
+                    <CheckCircle className="h-4 w-4 text-green-600" />
+                    <span className="text-gray-700 text-sm">أنظمة تهوية للغبار والأبخرة السامة</span>
+                  </div>
+                  <div className="flex items-center space-x-3 space-x-reverse">
+                    <CheckCircle className="h-4 w-4 text-green-600" />
+                    <span className="text-gray-700 text-sm">حماية منشآت التخزين والمواد الخام</span>
+                  </div>
+                </div>
+     
               </CardContent>
             </Card>
 
